@@ -386,15 +386,13 @@ body {
 # ---------------- UTILITY FUNCTIONS ----------------
 @st.cache_data
 def load_data():
-    """Load student and session data"""
-    students = pd.read_excel("student.xlsx")
-    sessions = pd.read_excel("session.xlsx")
-
-    # Clean column names
-    students.columns = students.columns.str.strip().str.lower().str.replace(" ", "_")
-    sessions.columns = sessions.columns.str.strip().str.lower().str.replace(" ", "_")
-
-    return students, sessions
+    try:
+        students = pd.read_excel("student.xlsx", engine="openpyxl")
+        sessions = pd.read_excel("session.xlsx", engine="openpyxl")
+        return students, sessions
+    except Exception as e:
+        st.error(f"Data load error: {e}")
+        return None, None
 
 def save_tracking_data(tracking_entry):
     """Save tracking data to CSV with proper error handling"""
