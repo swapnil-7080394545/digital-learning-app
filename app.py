@@ -387,8 +387,8 @@ body {
 @st.cache_data
 def load_data():
     try:
-        students = pd.read_excel("student.xlsx", engine="openpyxl")
-        sessions = pd.read_excel("session.xlsx", engine="openpyxl")
+        students = pd.read_csv("student.csv")
+        sessions = pd.read_csv("session.csv")
         return students, sessions
     except Exception as e:
         st.error(f"Data load error: {e}")
