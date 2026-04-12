@@ -1,0 +1,5 @@
+student_id,school,class,session,date,time,device,use_time,session_completed,week,month,day
+9273001001003,Composite UPS Fulwariya,6,session1,2026-04-12,16:24:35.987113,web,29.03,0,15,4,Sunday
+9273001001001,Composite UPS Mudila,7,session11,2026-04-12,16:52:44.868274,web,0.0,0,15,4,Sunday
+9273001001001,Composite UPS Mahrajganj,6,session12,2026-04-12,17:12:09.170627,web,0.0,0,15,4,Sunday
+9273001001003,Composite UPS Mudila,7,session12,2026-04-12,17:30:34.404554,web,0.0,0,15,4,Sunday
