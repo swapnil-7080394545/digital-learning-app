@@ -1,11 +1,9 @@
 import os
 import platform
-import random
-from datetime import datetime, timedelta
+from datetime import datetime
 
 import pandas as pd
 import streamlit as st
-import streamlit.components.v1 as components
 
 # Streamlit page configuration
 st.set_page_config(
@@ -16,132 +14,62 @@ st.set_page_config(
 
 DATA_DIR = os.path.dirname(os.path.abspath(__file__))
 STUDENT_XLSX = os.path.join(DATA_DIR, "student.xlsx")
+STUDENT_CSV = os.path.join(DATA_DIR, "student.csv")
 SESSION_CSV = os.path.join(DATA_DIR, "session.csv")
 TRACKING_CSV = os.path.join(DATA_DIR, "tracking.csv")
 
 # ------------------ LOAD DATA ------------------
 
+@st.cache_data
 def load_student_data():
     if os.path.exists(STUDENT_XLSX):
         try:
             return pd.read_excel(STUDENT_XLSX, engine="openpyxl", dtype=str)
-        except:
+        except Exception:
             pass
-    student_csv = os.path.join(DATA_DIR, "student.csv")
-    if os.path.exists(student_csv):
-        return pd.read_csv(student_csv, dtype=str)
+    if os.path.exists(STUDENT_CSV):
+        try:
+            return pd.read_csv(STUDENT_CSV, dtype=str)
+        except Exception:
+            pass
     return pd.DataFrame()
 
 @st.cache_data
 def load_session_data():
     return pd.read_csv(SESSION_CSV, dtype=str).fillna("")
 
-@st.cache_data
-def load_tracking_data():
-    if os.path.exists(TRACKING_CSV):
-        df = pd.read_csv(TRACKING_CSV, dtype=str)
-        df["use_time"] = pd.to_numeric(df.get("use_time", 0), errors="coerce").fillna(0)
-        return df
-    return pd.DataFrame()
-
-def save_tracking(entry):
-    df = pd.DataFrame([entry])
-    df.to_csv(TRACKING_CSV, mode="a", header=not os.path.exists(TRACKING_CSV), index=False)
-    load_tracking_data.clear()
-
-def ensure_dummy_tracking(tracking_df, student_df, session_df):
-    if st.session_state.get("dummy_populated"):
-        return
-
-    if len(tracking_df) >= 1000:
-        st.session_state.dummy_populated = True
-        return
-
-    if student_df.empty or session_df.empty:
-        return
-
-    needed = max(0, 1000 - len(tracking_df))
-    student_ids = student_df["student_ID"].astype(str).unique().tolist()
-    schools = student_df["School"].astype(str).unique().tolist()
-    student_map = student_df.set_index("student_ID")["School"].to_dict()
-    session_options = session_df["Session"].astype(str).tolist()
-    classes = session_df["Class"].astype(str).unique().tolist()
-
-    dummy_rows = []
-    today = datetime.today()
-    for _ in range(needed):
-        student_id = random.choice(student_ids)
-        school = student_map.get(student_id, random.choice(schools))
-        session_item = random.choice(session_options)
-        class_item = random.choice(classes)
-        date_value = today - timedelta(days=random.randint(0, 35))
-        start_time = datetime.combine(date_value.date(), datetime.min.time()) + timedelta(
-            hours=random.randint(8, 21), minutes=random.randint(0, 59)
-        )
-        use_time = round(random.uniform(2.0, 50.0), 2)
-        completed = random.choice(["Yes", "No"])
-
-        dummy_rows.append({
-            "student_id": str(student_id),
-            "school": school,
-            "class": class_item,
-            "session": session_item,
-            "date": date_value.strftime("%Y-%m-%d"),
-            "time": start_time.strftime("%H:%M:%S"),
-            "device": random.choice(["Mobile", "Desktop"]),
-            "use_time": use_time,
-            "session_completed": completed,
-            "week": date_value.strftime("%U"),
-            "month": date_value.month,
-            "day": date_value.strftime("%A"),
-        })
-
-    if dummy_rows:
-        pd.DataFrame(dummy_rows).to_csv(TRACKING_CSV, mode="a", header=not os.path.exists(TRACKING_CSV), index=False)
-        load_tracking_data.clear()
-    st.session_state.dummy_populated = True
-
-def detect_device_type():
-    if "device_type" in st.session_state and st.session_state.device_type:
-        return st.session_state.device_type
-
+def save_to_tracking_csv(entry):
+    """Append tracking data to tracking.csv."""
     try:
-        if hasattr(st, "query_params"):
-            query_params = dict(st.query_params)
+        # Prepare the row
+        row = [{
+            "student_id": entry.get("student_id", ""),
+            "school": entry.get("school", ""),
+            "class": entry.get("class", ""),
+            "session": entry.get("session", ""),
+            "date": entry.get("date", ""),
+            "time": entry.get("time", ""),
+            "device": entry.get("device", ""),
+            "use_time": entry.get("use_time", ""),
+            "session_completed": entry.get("session_completed", ""),
+            "week": entry.get("week", ""),
+            "month": entry.get("month", ""),
+            "day": entry.get("day", ""),
+        }]
+        
+        # Read existing data or create new
+        if os.path.exists(TRACKING_CSV):
+            df = pd.read_csv(TRACKING_CSV, dtype=str)
+            df = pd.concat([df, pd.DataFrame(row)], ignore_index=True)
         else:
-            query_params = st.experimental_get_query_params()
-    except Exception:
-        query_params = {}
-
-    device_from_query = query_params.get("device", [None])
-    if isinstance(device_from_query, list):
-        device_from_query = device_from_query[0] if device_from_query else None
-
-    if device_from_query:
-        st.session_state.device_type = device_from_query
-        return device_from_query
-
-    js = """
-        <script>
-        const isMobile = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        const device = isMobile ? 'Mobile' : 'Desktop';
-        const params = new URLSearchParams(window.location.search);
-        params.set('device', device);
-        window.history.replaceState({}, '', `${window.location.pathname}?${params}`);
-        </script>
-    """
-    components.html(js, height=0)
-    fallback = platform.system()
-    st.session_state.device_type = "Detecting..." if not device_from_query else fallback
-    return st.session_state.device_type
-
-def safe_rerun():
-    if hasattr(st, "rerun"):
-        st.rerun()
-    elif hasattr(st, "experimental_rerun"):
-        st.experimental_rerun()
-    else:
-        raise RuntimeError("Streamlit rerun not available in this version.")
+            df = pd.DataFrame(row)
+        
+        # Save to CSV
+        df.to_csv(TRACKING_CSV, index=False)
+        return True
+    except Exception as e:
+        st.error(f"Failed to save to tracking.csv: {str(e)}")
+        return False
 
 # ------------------ SAFE CLEAN ------------------
 
@@ -170,7 +98,7 @@ def login_page(student_df):
                     if not user.empty:
                         st.session_state.user = user.iloc[0].to_dict()
                         st.session_state.login = True
-                        safe_rerun()
+                        st.rerun()
                     else:
                         st.error("Invalid student ID or password. Please try again.")
                 else:
@@ -182,7 +110,7 @@ def login_page(student_df):
 
 # ------------------ MAIN APP ------------------
 
-def main_app(student_df, session_df, tracking_df):
+def main_app(student_df, session_df):
     if student_df.empty:
         st.error("Student data could not be loaded. Please check the data files.")
         return
@@ -196,38 +124,46 @@ def main_app(student_df, session_df, tracking_df):
     student_class = user.get("Class", "")
 
     st.markdown(f"## Welcome {student_name}")
-    st.markdown("### Digital Learning & Tracking Dashboard")
+    st.markdown("### Digital Learning Platform")
 
-    logout_col, device_col = st.columns([1, 1])
+    logout_col = st.columns([1])[0]
     with logout_col:
         if st.button("Logout"):
             st.session_state.clear()
-            safe_rerun()
-
-    with device_col:
-        device_type = detect_device_type()
-        st.info(f"Detected device: **{device_type}**")
+            st.rerun()
 
     with st.expander("Your selected session details", expanded=True):
         choice_col1, choice_col2, choice_col3 = st.columns(3)
         schools = clean_list(student_df["School"])
-        if student_school and student_school in schools:
-            selected_school = choice_col1.selectbox("Select School", schools, index=schools.index(student_school))
-        else:
-            selected_school = choice_col1.selectbox("Select School", schools)
+        default_school = st.session_state.get("selected_school", student_school if student_school in schools else (schools[0] if schools else ""))
+        selected_school = choice_col1.selectbox(
+            "Select School",
+            schools,
+            index=schools.index(default_school) if default_school in schools else 0,
+            key="selected_school",
+        ) if schools else ""
 
         classes_for_school = clean_list(student_df[student_df["School"] == selected_school]["Class"])
         if not classes_for_school:
             classes_for_school = clean_list(student_df["Class"])
-        if str(student_class) in classes_for_school:
-            selected_class = choice_col2.selectbox("Select Class", classes_for_school, index=classes_for_school.index(str(student_class)))
-        else:
-            selected_class = choice_col2.selectbox("Select Class", classes_for_school)
+        default_class = st.session_state.get("selected_class", str(student_class) if str(student_class) in classes_for_school else (classes_for_school[0] if classes_for_school else ""))
+        selected_class = choice_col2.selectbox(
+            "Select Class",
+            classes_for_school,
+            index=classes_for_school.index(default_class) if default_class in classes_for_school else 0,
+            key="selected_class",
+        ) if classes_for_school else ""
 
         sessions_for_class = session_df[session_df["Class"] == selected_class]
         session_options = clean_list(sessions_for_class["Session"])
         if session_options:
-            selected_session = choice_col3.selectbox("Select Session", session_options)
+            default_session = st.session_state.get("selected_session", session_options[0])
+            selected_session = choice_col3.selectbox(
+                "Select Session",
+                session_options,
+                index=session_options.index(default_session) if default_session in session_options else 0,
+                key="selected_session",
+            )
         else:
             selected_session = None
             choice_col3.info("No sessions found for this class.")
@@ -242,12 +178,37 @@ def main_app(student_df, session_df, tracking_df):
         if video_url:
             try:
                 st.video(video_url)
+                
+                # Auto-save tracking when video is displayed
+                if "tracked_session" not in st.session_state:
+                    st.session_state.tracked_session = None
+                
+                current_session_key = f"{selected_school}_{selected_class}_{selected_session}"
+                if st.session_state.tracked_session != current_session_key:
+                    entry = {
+                        "student_id": str(user.get("student_ID", "")),
+                        "school": selected_school,
+                        "class": str(selected_class),
+                        "session": str(selected_session),
+                        "date": datetime.now().strftime("%Y-%m-%d"),
+                        "time": datetime.now().strftime("%H:%M:%S.%f"),
+                        "device": "web",
+                        "use_time": "",
+                        "session_completed": "0",
+                        "week": datetime.now().strftime("%U"),
+                        "month": datetime.now().month,
+                        "day": datetime.now().strftime("%A"),
+                    }
+                    save_to_tracking_csv(entry)
+                    st.session_state.tracked_session = current_session_key
+                    st.toast("✅ Session tracked", icon="📝")
+                
             except Exception as e:
                 st.error(f"Unable to load video: {str(e)}")
                 st.info("Please check the video link or try again later.")
 
         with notes_col:
-            st.markdown("### 📄 Download Notes")
+            st.markdown("###  Download Notes")
             notes = session_details.get("Notes") or session_details.get("notes") or session_details.get("Notes Link") or ""
             if notes and str(notes).strip():
                 st.markdown(f"[📥 Download Notes]({notes})")
@@ -256,106 +217,6 @@ def main_app(student_df, session_df, tracking_df):
     else:
         st.info("Choose a session to view the video and notes preview.")
 
-    st.markdown("---")
-    tracker_col, stats_col = st.columns([2, 1])
-    with tracker_col:
-        st.subheader("Session Tracking")
-        if "current_session_start" not in st.session_state:
-            st.session_state.current_session_start = None
-        if "completed_radio" not in st.session_state:
-            st.session_state.completed_radio = "Yes"
-
-        completed_option = st.radio("Did you complete the session?", ["Yes", "No"], index=0, key="completed_radio")
-
-        start_button, end_button = st.columns(2)
-        if start_button.button("Start Session"):
-            st.session_state.current_session_start = datetime.now()
-            st.success("Session started. Enjoy your learning!")
-
-        if end_button.button("End Session"):
-            if st.session_state.current_session_start is None:
-                st.warning("Please start a session before ending it.")
-            elif selected_session is None:
-                st.warning("Please select a session before ending the tracking.")
-            else:
-                start_time = st.session_state.current_session_start
-                elapsed = datetime.now() - start_time
-                elapsed_minutes = round(elapsed.total_seconds() / 60, 2)
-                entry = {
-                    "student_id": str(user.get("student_ID", "")),
-                    "school": selected_school,
-                    "class": str(selected_class),
-                    "session": str(selected_session),
-                    "date": datetime.now().strftime("%Y-%m-%d"),
-                    "time": datetime.now().strftime("%H:%M:%S"),
-                    "device": device_type if device_type not in ["Detecting...", ""] else platform.system(),
-                    "use_time": elapsed_minutes,
-                    "session_completed": completed_option,
-                    "week": datetime.now().strftime("%U"),
-                    "month": datetime.now().month,
-                    "day": datetime.now().strftime("%A"),
-                }
-                save_tracking(entry)
-                st.success(f"Saved tracking record: {elapsed_minutes} minutes.")
-                st.session_state.current_session_start = None
-                safe_rerun()
-
-    with stats_col:
-        st.subheader("Session Activity")
-        st.markdown("Track your learning time, mark completion, and keep progress visible to teachers.")
-        st.write("- Start a session when you begin learning.")
-        st.write("- End the session when you finish or take a break.")
-        st.write("- The dashboard updates with usage and completion statistics.")
-
-    st.markdown("---")
-    st.subheader("Tracking Dashboard")
-    render_dashboard(tracking_df)
-
-def render_dashboard(tracking_df):
-    try:
-        if tracking_df.empty:
-            st.warning("No tracking data is available yet.")
-            return
-
-        tracking_df["is_completed"] = tracking_df["session_completed"].astype(str).str.lower().isin(["yes", "1", "true"])
-        total_students = tracking_df["student_id"].nunique()
-        total_completed = tracking_df["is_completed"].sum()
-        total_hours = tracking_df["use_time"].astype(float).sum()
-        completion_rate = round(total_completed / max(len(tracking_df), 1) * 100, 1)
-
-        metric_col1, metric_col2, metric_col3 = st.columns(3)
-        metric_col1.metric("Total Students", total_students)
-        metric_col2.metric("Sessions Completed", int(total_completed))
-        metric_col3.metric("Total Usage Time (mins)", round(total_hours, 1))
-
-        chart_col1, chart_col2 = st.columns(2)
-        with chart_col1:
-            st.subheader("Class-wise Usage")
-            class_usage = tracking_df.groupby("class")["use_time"].sum().sort_values(ascending=False)
-            st.bar_chart(class_usage)
-
-        with chart_col2:
-            st.subheader("Daily Activity")
-            if "date" in tracking_df.columns:
-                daily_activity = tracking_df.groupby("date")["use_time"].sum().sort_index()
-                st.line_chart(daily_activity)
-            else:
-                st.info("Daily activity will appear after sessions are tracked.")
-
-        completion_col, recent_col = st.columns([2, 3])
-        with completion_col:
-            st.subheader("Session Completion Rate")
-            completion_by_class = tracking_df.groupby("class").agg(
-                completed=("is_completed", "sum"), total=("is_completed", "count")
-            )
-            completion_by_class["rate"] = (completion_by_class["completed"] / completion_by_class["total"] * 100).round(1)
-            st.dataframe(completion_by_class["rate"].rename("Completion %"), use_container_width=True)
-
-        with recent_col:
-            st.subheader("Recent Tracking Activity")
-            st.dataframe(tracking_df.sort_values(by=["date", "time"], ascending=False).head(12))
-    except Exception as e:
-        st.error(f"Error loading dashboard: {str(e)}")
 
 def apply_custom_styles():
     st.markdown(
@@ -576,17 +437,16 @@ def apply_custom_styles():
 
 def main():
     try:
+        st.session_state.setdefault("login", False)
+        st.session_state.setdefault("user", {})
         apply_custom_styles()
         student_df = load_student_data()
         session_df = load_session_data()
-        tracking_df = load_tracking_data()
 
-        ensure_dummy_tracking(tracking_df, student_df, session_df)
-
-        if not st.session_state.get("login"):
+        if not st.session_state.login:
             login_page(student_df)
         else:
-            main_app(student_df, session_df, tracking_df)
+            main_app(student_df, session_df)
     except Exception as e:
         st.error(f"An error occurred: {str(e)}")
         st.info("Please refresh the page or contact support if the issue persists.")
