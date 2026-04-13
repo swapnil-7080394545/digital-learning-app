@@ -3,3 +3,999 @@ student_id,school,class,session,date,time,device,use_time,session_completed,week
 9273001001001,Composite UPS Mudila,7,session11,2026-04-12,16:52:44.868274,web,0.0,0,15,4,Sunday
 9273001001001,Composite UPS Mahrajganj,6,session12,2026-04-12,17:12:09.170627,web,0.0,0,15,4,Sunday
 9273001001003,Composite UPS Mudila,7,session12,2026-04-12,17:30:34.404554,web,0.0,0,15,4,Sunday
+09273001003146,UPS Sanjhai,8,session10,2026-03-13,09:15:00,Desktop,24.26,Yes,10,3,Friday
+09273002004316,Composite UPS Fulwariya,8,session13,2026-03-25,20:16:00,Desktop,24.23,Yes,12,3,Wednesday
+09273001002132,Composite UPS Mahrajganj,7,session20,2026-04-09,09:16:00,Mobile,34.97,Yes,14,4,Thursday
+09273002005360,Composite UPS Mudila,7,session18,2026-03-09,10:30:00,Mobile,34.14,Yes,10,3,Monday
+09273002005083,Composite UPS Mudila,6,session3,2026-04-08,17:01:00,Desktop,18.26,Yes,14,4,Wednesday
+09273002004077,Composite UPS Fulwariya,7,session11,2026-03-20,18:31:00,Mobile,36.22,No,11,3,Friday
+09273001003280,UPS Sanjhai,7,session13,2026-04-08,17:54:00,Mobile,17.2,No,14,4,Wednesday
+09273002004137,Composite UPS Fulwariya,6,session19,2026-03-09,21:07:00,Desktop,4.05,No,10,3,Monday
+09273001001397,Composite UPS Narayanpur,6,session4,2026-04-05,16:03:00,Desktop,19.75,No,14,4,Sunday
+09273001002169,Composite UPS Mahrajganj,6,session3,2026-03-09,18:55:00,Desktop,14.1,Yes,10,3,Monday
+09273001002091,Composite UPS Mahrajganj,8,session1,2026-03-23,18:17:00,Desktop,39.87,Yes,12,3,Monday
+09273002005180,Composite UPS Mudila,7,session14,2026-03-09,11:36:00,Desktop,46.05,Yes,10,3,Monday
+09273001002143,Composite UPS Mahrajganj,7,session1,2026-03-16,08:58:00,Desktop,21.49,Yes,11,3,Monday
+09273001001327,Composite UPS Narayanpur,8,session18,2026-03-31,17:57:00,Mobile,46.31,Yes,13,3,Tuesday
+09273001002395,Composite UPS Mahrajganj,6,session10,2026-03-23,13:01:00,Desktop,39.55,No,12,3,Monday
+09273001003018,UPS Sanjhai,6,session9,2026-03-11,13:04:00,Desktop,3.76,No,10,3,Wednesday
+09273001002377,Composite UPS Mahrajganj,6,session6,2026-03-10,18:36:00,Desktop,29.08,Yes,10,3,Tuesday
+09273001001367,Composite UPS Narayanpur,7,session4,2026-03-30,16:36:00,Mobile,23.78,Yes,13,3,Monday
+09273002005067,Composite UPS Mudila,7,session10,2026-04-04,13:52:00,Mobile,25.5,Yes,13,4,Saturday
+09273002005391,Composite UPS Mudila,7,session16,2026-03-25,15:35:00,Desktop,10.09,No,12,3,Wednesday
+09273002004250,Composite UPS Fulwariya,7,session11,2026-04-06,08:17:00,Mobile,11.85,Yes,14,4,Monday
+09273001002075,Composite UPS Mahrajganj,7,session11,2026-03-18,16:59:00,Mobile,10.22,Yes,11,3,Wednesday
+09273001001123,Composite UPS Narayanpur,6,session10,2026-04-11,17:03:00,Desktop,6.4,Yes,14,4,Saturday
+09273001001265,Composite UPS Narayanpur,7,session17,2026-03-15,09:17:00,Desktop,12.24,Yes,11,3,Sunday
+09273002004104,Composite UPS Fulwariya,7,session10,2026-03-11,18:18:00,Mobile,8.42,Yes,10,3,Wednesday
+09273001003223,UPS Sanjhai,8,session12,2026-04-11,17:12:00,Desktop,4.99,No,14,4,Saturday
+09273001003240,UPS Sanjhai,6,session17,2026-04-04,17:40:00,Mobile,32.34,Yes,13,4,Saturday
+09273001002156,Composite UPS Mahrajganj,8,session18,2026-04-08,13:10:00,Mobile,26.39,No,14,4,Wednesday
+09273002004247,Composite UPS Fulwariya,6,session4,2026-03-10,10:01:00,Desktop,30.13,Yes,10,3,Tuesday
+09273001002239,Composite UPS Mahrajganj,6,session8,2026-03-09,11:54:00,Desktop,48.81,Yes,10,3,Monday
+09273001002116,Composite UPS Mahrajganj,8,session12,2026-03-28,08:29:00,Mobile,4.99,No,12,3,Saturday
+09273002005105,Composite UPS Mudila,6,session17,2026-04-05,15:45:00,Desktop,39.85,Yes,14,4,Sunday
+09273002004399,Composite UPS Fulwariya,7,session12,2026-03-29,18:03:00,Desktop,3.03,Yes,13,3,Sunday
+09273001003115,UPS Sanjhai,7,session10,2026-03-14,21:37:00,Mobile,25.19,Yes,10,3,Saturday
+09273001003203,UPS Sanjhai,6,session9,2026-03-25,17:17:00,Desktop,13.15,Yes,12,3,Wednesday
+09273001002134,Composite UPS Mahrajganj,6,session17,2026-04-06,16:07:00,Desktop,26.93,No,14,4,Monday
+09273001002376,Composite UPS Mahrajganj,8,session7,2026-04-13,12:26:00,Desktop,15.87,Yes,15,4,Monday
+09273002005007,Composite UPS Mudila,7,session14,2026-03-11,19:25:00,Mobile,36.67,Yes,10,3,Wednesday
+09273001002004,Composite UPS Mahrajganj,6,session8,2026-04-06,21:28:00,Desktop,7.36,Yes,14,4,Monday
+09273002005088,Composite UPS Mudila,7,session16,2026-03-12,15:52:00,Desktop,46.86,Yes,10,3,Thursday
+09273001002055,Composite UPS Mahrajganj,7,session18,2026-04-08,16:49:00,Desktop,45.23,No,14,4,Wednesday
+09273002004381,Composite UPS Fulwariya,6,session12,2026-03-09,10:38:00,Desktop,26.47,No,10,3,Monday
+09273002004342,Composite UPS Fulwariya,8,session8,2026-03-20,16:47:00,Desktop,4.83,No,11,3,Friday
+09273001002326,Composite UPS Mahrajganj,8,session11,2026-03-10,10:42:00,Desktop,24.54,No,10,3,Tuesday
+09273002005096,Composite UPS Mudila,7,session16,2026-03-17,17:26:00,Desktop,38.03,Yes,11,3,Tuesday
+09273001002094,Composite UPS Mahrajganj,7,session2,2026-04-05,08:30:00,Mobile,38.43,Yes,14,4,Sunday
+09273002004348,Composite UPS Fulwariya,8,session9,2026-03-18,15:53:00,Desktop,2.03,Yes,11,3,Wednesday
+09273001003169,UPS Sanjhai,7,session16,2026-04-10,08:12:00,Mobile,12.48,Yes,14,4,Friday
+09273001002119,Composite UPS Mahrajganj,6,session1,2026-04-12,12:03:00,Desktop,13.24,Yes,15,4,Sunday
+09273002004391,Composite UPS Fulwariya,6,session17,2026-03-20,18:13:00,Desktop,4.25,No,11,3,Friday
+09273002005195,Composite UPS Mudila,8,session11,2026-03-12,09:53:00,Desktop,19.24,Yes,10,3,Thursday
+09273002004203,Composite UPS Fulwariya,7,session9,2026-03-12,19:00:00,Desktop,16.55,Yes,10,3,Thursday
+09273001003291,UPS Sanjhai,8,session8,2026-04-13,18:14:00,Desktop,17.04,No,15,4,Monday
+09273001001098,Composite UPS Narayanpur,8,session16,2026-03-29,21:03:00,Mobile,42.14,Yes,13,3,Sunday
+09273002005089,Composite UPS Mudila,7,session8,2026-03-30,09:12:00,Mobile,38.03,Yes,13,3,Monday
+09273001002235,Composite UPS Mahrajganj,7,session11,2026-03-09,15:56:00,Desktop,44.53,No,10,3,Monday
+09273001002321,Composite UPS Mahrajganj,6,session1,2026-04-12,08:57:00,Desktop,9.85,Yes,15,4,Sunday
+09273002004393,Composite UPS Fulwariya,7,session16,2026-03-14,20:34:00,Desktop,24.08,No,10,3,Saturday
+09273001001059,Composite UPS Narayanpur,6,session5,2026-03-10,14:15:00,Desktop,40.73,No,10,3,Tuesday
+09273002005346,Composite UPS Mudila,6,session1,2026-03-19,21:01:00,Mobile,3.07,No,11,3,Thursday
+09273001003095,UPS Sanjhai,8,session7,2026-04-13,21:40:00,Desktop,8.08,No,15,4,Monday
+09273001001208,Composite UPS Narayanpur,6,session16,2026-03-16,15:59:00,Desktop,42.21,No,11,3,Monday
+09273002004240,Composite UPS Fulwariya,8,session2,2026-04-07,11:22:00,Desktop,28.25,Yes,14,4,Tuesday
+09273001002103,Composite UPS Mahrajganj,8,session20,2026-03-20,13:25:00,Mobile,40.21,Yes,11,3,Friday
+09273001001174,Composite UPS Narayanpur,6,session12,2026-04-02,11:29:00,Mobile,43.28,No,13,4,Thursday
+09273001002109,Composite UPS Mahrajganj,7,session17,2026-03-14,13:17:00,Desktop,6.22,No,10,3,Saturday
+09273001001388,Composite UPS Narayanpur,8,session3,2026-04-02,17:05:00,Desktop,31.61,No,13,4,Thursday
+09273002005036,Composite UPS Mudila,8,session3,2026-03-20,13:13:00,Mobile,28.08,Yes,11,3,Friday
+09273001002246,Composite UPS Mahrajganj,8,session17,2026-03-19,11:22:00,Mobile,41.71,No,11,3,Thursday
+09273001001300,Composite UPS Narayanpur,6,session14,2026-03-21,21:57:00,Desktop,20.88,No,11,3,Saturday
+09273002004233,Composite UPS Fulwariya,8,session4,2026-03-17,21:04:00,Mobile,38.99,Yes,11,3,Tuesday
+09273001001235,Composite UPS Narayanpur,6,session13,2026-03-14,09:58:00,Mobile,24.98,No,10,3,Saturday
+09273001002102,Composite UPS Mahrajganj,6,session5,2026-03-28,09:57:00,Desktop,3.33,Yes,12,3,Saturday
+09273002005243,Composite UPS Mudila,7,session19,2026-04-10,17:35:00,Desktop,6.03,No,14,4,Friday
+09273002004060,Composite UPS Fulwariya,6,session14,2026-03-17,16:40:00,Mobile,7.99,No,11,3,Tuesday
+09273001001271,Composite UPS Narayanpur,7,session20,2026-04-01,13:04:00,Mobile,13.61,Yes,13,4,Wednesday
+09273001001301,Composite UPS Narayanpur,8,session14,2026-03-11,15:22:00,Mobile,15.0,No,10,3,Wednesday
+09273002004188,Composite UPS Fulwariya,7,session20,2026-03-11,17:25:00,Mobile,6.81,No,10,3,Wednesday
+09273001001179,Composite UPS Narayanpur,8,session19,2026-03-22,18:08:00,Mobile,21.48,No,12,3,Sunday
+09273001002359,Composite UPS Mahrajganj,8,session12,2026-04-11,18:50:00,Desktop,47.67,Yes,14,4,Saturday
+09273001002163,Composite UPS Mahrajganj,7,session5,2026-03-12,13:21:00,Desktop,41.3,No,10,3,Thursday
+09273001002121,Composite UPS Mahrajganj,6,session19,2026-04-07,14:31:00,Desktop,43.43,Yes,14,4,Tuesday
+09273001001368,Composite UPS Narayanpur,6,session10,2026-03-15,15:25:00,Mobile,41.32,Yes,11,3,Sunday
+09273002005207,Composite UPS Mudila,8,session17,2026-03-14,15:55:00,Desktop,37.19,No,10,3,Saturday
+09273001002214,Composite UPS Mahrajganj,6,session4,2026-03-30,18:52:00,Desktop,49.02,Yes,13,3,Monday
+09273002004146,Composite UPS Fulwariya,6,session19,2026-03-16,18:40:00,Mobile,27.92,No,11,3,Monday
+09273002004071,Composite UPS Fulwariya,6,session19,2026-03-17,12:22:00,Mobile,33.93,No,11,3,Tuesday
+09273001001040,Composite UPS Narayanpur,8,session18,2026-04-07,14:57:00,Mobile,13.93,Yes,14,4,Tuesday
+09273002005014,Composite UPS Mudila,6,session8,2026-04-12,15:42:00,Desktop,10.38,Yes,15,4,Sunday
+09273002005015,Composite UPS Mudila,7,session4,2026-03-29,18:20:00,Desktop,24.19,No,13,3,Sunday
+09273001001194,Composite UPS Narayanpur,7,session13,2026-03-12,20:55:00,Mobile,7.63,No,10,3,Thursday
+09273001002136,Composite UPS Mahrajganj,8,session17,2026-03-26,16:46:00,Mobile,3.23,No,12,3,Thursday
+09273001001017,Composite UPS Narayanpur,7,session10,2026-03-22,09:24:00,Desktop,25.98,Yes,12,3,Sunday
+09273002005295,Composite UPS Mudila,7,session6,2026-04-13,16:09:00,Mobile,18.8,No,15,4,Monday
+09273002005328,Composite UPS Mudila,6,session16,2026-03-31,11:11:00,Mobile,31.53,No,13,3,Tuesday
+09273001001182,Composite UPS Narayanpur,8,session13,2026-03-19,12:37:00,Mobile,30.76,Yes,11,3,Thursday
+09273001002091,Composite UPS Mahrajganj,7,session12,2026-04-11,08:55:00,Desktop,42.99,No,14,4,Saturday
+09273001002399,Composite UPS Mahrajganj,6,session15,2026-03-29,19:10:00,Mobile,27.77,Yes,13,3,Sunday
+09273001003087,UPS Sanjhai,6,session1,2026-03-15,18:19:00,Mobile,13.79,Yes,11,3,Sunday
+09273001003252,UPS Sanjhai,7,session13,2026-03-19,15:51:00,Desktop,27.11,No,11,3,Thursday
+09273001001180,Composite UPS Narayanpur,6,session20,2026-04-06,14:40:00,Mobile,10.1,No,14,4,Monday
+09273002005036,Composite UPS Mudila,6,session16,2026-04-13,14:59:00,Desktop,4.37,No,15,4,Monday
+09273002005313,Composite UPS Mudila,6,session6,2026-03-26,13:29:00,Desktop,22.36,Yes,12,3,Thursday
+09273002004129,Composite UPS Fulwariya,6,session12,2026-04-07,18:19:00,Mobile,38.82,No,14,4,Tuesday
+09273001003017,UPS Sanjhai,8,session14,2026-04-03,14:24:00,Desktop,21.69,No,13,4,Friday
+09273001002318,Composite UPS Mahrajganj,8,session19,2026-03-13,10:39:00,Mobile,47.24,Yes,10,3,Friday
+09273001003396,UPS Sanjhai,7,session19,2026-04-07,11:23:00,Desktop,37.65,No,14,4,Tuesday
+09273002004215,Composite UPS Fulwariya,7,session13,2026-03-12,15:20:00,Desktop,27.69,No,10,3,Thursday
+09273001002089,Composite UPS Mahrajganj,6,session4,2026-03-17,20:50:00,Mobile,18.74,Yes,11,3,Tuesday
+09273002004082,Composite UPS Fulwariya,8,session19,2026-04-12,19:01:00,Desktop,11.27,Yes,15,4,Sunday
+09273002004167,Composite UPS Fulwariya,7,session12,2026-03-28,17:12:00,Mobile,3.36,Yes,12,3,Saturday
+09273001001074,Composite UPS Narayanpur,8,session9,2026-04-08,19:26:00,Desktop,17.79,Yes,14,4,Wednesday
+09273001001229,Composite UPS Narayanpur,8,session14,2026-03-16,21:19:00,Desktop,2.16,No,11,3,Monday
+09273002005396,Composite UPS Mudila,7,session11,2026-04-08,10:14:00,Desktop,19.14,No,14,4,Wednesday
+09273001001246,Composite UPS Narayanpur,7,session18,2026-03-25,20:10:00,Desktop,38.66,No,12,3,Wednesday
+09273002004233,Composite UPS Fulwariya,7,session8,2026-04-02,14:39:00,Mobile,44.75,Yes,13,4,Thursday
+09273002004147,Composite UPS Fulwariya,7,session3,2026-03-14,19:23:00,Desktop,44.78,Yes,10,3,Saturday
+09273001002174,Composite UPS Mahrajganj,7,session13,2026-03-17,21:24:00,Desktop,44.46,No,11,3,Tuesday
+09273002005392,Composite UPS Mudila,6,session14,2026-03-14,18:17:00,Desktop,40.11,No,10,3,Saturday
+09273001003085,UPS Sanjhai,6,session12,2026-03-20,19:20:00,Desktop,25.26,No,11,3,Friday
+09273002005136,Composite UPS Mudila,6,session1,2026-04-09,21:13:00,Mobile,34.91,No,14,4,Thursday
+09273001003118,UPS Sanjhai,6,session18,2026-04-06,12:45:00,Mobile,16.77,Yes,14,4,Monday
+09273002004287,Composite UPS Fulwariya,8,session18,2026-04-13,08:01:00,Mobile,10.94,No,15,4,Monday
+09273001002291,Composite UPS Mahrajganj,6,session3,2026-03-29,11:12:00,Desktop,36.65,Yes,13,3,Sunday
+09273001002297,Composite UPS Mahrajganj,6,session1,2026-03-28,08:13:00,Mobile,21.89,Yes,12,3,Saturday
+09273001003323,UPS Sanjhai,6,session15,2026-04-05,12:21:00,Mobile,40.45,No,14,4,Sunday
+09273001002366,Composite UPS Mahrajganj,6,session19,2026-03-15,21:49:00,Desktop,10.63,Yes,11,3,Sunday
+09273001002176,Composite UPS Mahrajganj,8,session13,2026-03-10,15:33:00,Mobile,22.46,Yes,10,3,Tuesday
+09273002004367,Composite UPS Fulwariya,6,session12,2026-03-19,08:00:00,Mobile,31.71,Yes,11,3,Thursday
+09273002005359,Composite UPS Mudila,6,session10,2026-04-08,20:55:00,Desktop,45.92,Yes,14,4,Wednesday
+09273001001365,Composite UPS Narayanpur,7,session7,2026-03-31,18:57:00,Mobile,4.99,No,13,3,Tuesday
+09273001001355,Composite UPS Narayanpur,6,session13,2026-04-06,15:44:00,Mobile,31.63,Yes,14,4,Monday
+09273002004177,Composite UPS Fulwariya,6,session18,2026-03-22,19:50:00,Desktop,20.1,Yes,12,3,Sunday
+09273001002172,Composite UPS Mahrajganj,8,session7,2026-04-02,09:34:00,Desktop,12.3,No,13,4,Thursday
+09273001001325,Composite UPS Narayanpur,8,session11,2026-03-29,12:54:00,Desktop,26.8,Yes,13,3,Sunday
+09273001003058,UPS Sanjhai,7,session12,2026-04-13,14:10:00,Desktop,5.83,Yes,15,4,Monday
+09273001002343,Composite UPS Mahrajganj,7,session19,2026-03-12,18:42:00,Desktop,33.36,Yes,10,3,Thursday
+09273001001215,Composite UPS Narayanpur,6,session14,2026-03-12,20:29:00,Desktop,38.64,No,10,3,Thursday
+09273001001246,Composite UPS Narayanpur,6,session17,2026-03-13,12:13:00,Mobile,10.55,Yes,10,3,Friday
+09273001002256,Composite UPS Mahrajganj,6,session5,2026-03-27,14:26:00,Desktop,39.21,No,12,3,Friday
+09273002004391,Composite UPS Fulwariya,8,session17,2026-03-22,09:53:00,Mobile,23.1,Yes,12,3,Sunday
+09273002004262,Composite UPS Fulwariya,7,session17,2026-03-13,20:29:00,Mobile,18.01,No,10,3,Friday
+09273001003364,UPS Sanjhai,6,session1,2026-04-11,21:26:00,Mobile,22.01,Yes,14,4,Saturday
+09273002005162,Composite UPS Mudila,8,session7,2026-04-03,13:27:00,Mobile,48.99,Yes,13,4,Friday
+09273001003015,UPS Sanjhai,7,session16,2026-03-28,17:09:00,Desktop,32.79,Yes,12,3,Saturday
+09273001003319,UPS Sanjhai,7,session10,2026-04-11,09:01:00,Desktop,49.55,Yes,14,4,Saturday
+09273001001092,Composite UPS Narayanpur,6,session8,2026-03-10,12:07:00,Desktop,34.47,Yes,10,3,Tuesday
+09273002005335,Composite UPS Mudila,8,session1,2026-03-26,14:00:00,Mobile,8.54,Yes,12,3,Thursday
+09273001002397,Composite UPS Mahrajganj,6,session16,2026-03-19,21:13:00,Mobile,45.6,No,11,3,Thursday
+09273001001200,Composite UPS Narayanpur,8,session19,2026-04-06,12:10:00,Desktop,30.27,No,14,4,Monday
+09273001003358,UPS Sanjhai,6,session10,2026-04-05,09:18:00,Desktop,36.6,No,14,4,Sunday
+09273002005068,Composite UPS Mudila,8,session1,2026-03-24,19:55:00,Mobile,7.13,No,12,3,Tuesday
+09273001003174,UPS Sanjhai,8,session6,2026-03-14,10:21:00,Mobile,40.67,Yes,10,3,Saturday
+09273002005288,Composite UPS Mudila,6,session20,2026-04-05,20:31:00,Desktop,22.94,No,14,4,Sunday
+09273001003039,UPS Sanjhai,8,session12,2026-04-02,08:12:00,Desktop,2.55,Yes,13,4,Thursday
+09273001001166,Composite UPS Narayanpur,8,session12,2026-03-17,17:55:00,Desktop,20.03,Yes,11,3,Tuesday
+09273001002269,Composite UPS Mahrajganj,6,session5,2026-03-23,13:35:00,Mobile,29.13,Yes,12,3,Monday
+09273002005292,Composite UPS Mudila,6,session10,2026-04-11,10:44:00,Desktop,9.95,No,14,4,Saturday
+09273002004287,Composite UPS Fulwariya,7,session11,2026-04-06,19:11:00,Desktop,28.66,No,14,4,Monday
+09273001002013,Composite UPS Mahrajganj,6,session1,2026-03-14,11:32:00,Desktop,12.88,No,10,3,Saturday
+09273001002324,Composite UPS Mahrajganj,7,session11,2026-03-13,18:04:00,Desktop,47.11,Yes,10,3,Friday
+09273001003080,UPS Sanjhai,7,session16,2026-04-09,08:41:00,Mobile,17.64,Yes,14,4,Thursday
+09273001003273,UPS Sanjhai,6,session7,2026-03-10,19:26:00,Mobile,49.46,No,10,3,Tuesday
+09273001001099,Composite UPS Narayanpur,7,session6,2026-03-21,19:27:00,Desktop,10.68,Yes,11,3,Saturday
+09273002004248,Composite UPS Fulwariya,6,session4,2026-03-23,11:33:00,Mobile,13.28,Yes,12,3,Monday
+09273001001031,Composite UPS Narayanpur,6,session5,2026-04-01,13:18:00,Mobile,16.24,Yes,13,4,Wednesday
+09273001003028,UPS Sanjhai,8,session16,2026-03-28,10:55:00,Mobile,47.73,No,12,3,Saturday
+09273001001178,Composite UPS Narayanpur,7,session6,2026-03-10,10:37:00,Mobile,46.92,Yes,10,3,Tuesday
+09273001001303,Composite UPS Narayanpur,6,session10,2026-03-23,17:12:00,Mobile,46.71,No,12,3,Monday
+09273002005041,Composite UPS Mudila,8,session4,2026-04-02,14:20:00,Desktop,40.17,No,13,4,Thursday
+09273001002246,Composite UPS Mahrajganj,7,session13,2026-03-25,20:03:00,Desktop,18.12,Yes,12,3,Wednesday
+09273001001277,Composite UPS Narayanpur,8,session18,2026-03-14,15:37:00,Desktop,46.6,Yes,10,3,Saturday
+09273002004253,Composite UPS Fulwariya,6,session1,2026-03-09,14:26:00,Mobile,43.75,No,10,3,Monday
+09273001003087,UPS Sanjhai,7,session4,2026-03-23,17:41:00,Mobile,38.6,Yes,12,3,Monday
+09273001002262,Composite UPS Mahrajganj,8,session9,2026-03-14,20:25:00,Mobile,28.98,No,10,3,Saturday
+09273002004393,Composite UPS Fulwariya,8,session4,2026-03-28,19:39:00,Mobile,5.39,Yes,12,3,Saturday
+09273001002034,Composite UPS Mahrajganj,8,session4,2026-04-13,10:15:00,Mobile,18.48,Yes,15,4,Monday
+09273001002354,Composite UPS Mahrajganj,8,session8,2026-03-14,15:21:00,Desktop,49.52,Yes,10,3,Saturday
+09273001001147,Composite UPS Narayanpur,8,session9,2026-04-06,11:54:00,Desktop,36.07,No,14,4,Monday
+09273002004253,Composite UPS Fulwariya,7,session11,2026-04-10,14:44:00,Desktop,7.24,No,14,4,Friday
+09273001002381,Composite UPS Mahrajganj,6,session9,2026-04-08,20:47:00,Mobile,26.14,Yes,14,4,Wednesday
+09273001002376,Composite UPS Mahrajganj,8,session3,2026-03-29,18:05:00,Mobile,20.56,No,13,3,Sunday
+09273001002192,Composite UPS Mahrajganj,8,session13,2026-04-10,10:33:00,Desktop,37.93,Yes,14,4,Friday
+09273001002381,Composite UPS Mahrajganj,8,session3,2026-03-31,12:39:00,Desktop,37.99,Yes,13,3,Tuesday
+09273002005217,Composite UPS Mudila,7,session7,2026-03-18,14:37:00,Desktop,24.88,No,11,3,Wednesday
+09273002005005,Composite UPS Mudila,8,session17,2026-04-05,10:31:00,Mobile,26.28,Yes,14,4,Sunday
+09273001002205,Composite UPS Mahrajganj,7,session16,2026-04-05,16:13:00,Desktop,12.88,Yes,14,4,Sunday
+09273002005357,Composite UPS Mudila,6,session4,2026-03-29,17:40:00,Mobile,47.25,No,13,3,Sunday
+09273002005396,Composite UPS Mudila,8,session2,2026-03-14,12:07:00,Desktop,39.09,No,10,3,Saturday
+09273002005266,Composite UPS Mudila,7,session12,2026-03-23,21:10:00,Mobile,22.45,Yes,12,3,Monday
+09273002004043,Composite UPS Fulwariya,7,session5,2026-04-13,09:35:00,Mobile,17.25,Yes,15,4,Monday
+09273002005307,Composite UPS Mudila,8,session9,2026-03-15,08:47:00,Desktop,27.29,Yes,11,3,Sunday
+09273001002141,Composite UPS Mahrajganj,8,session19,2026-04-05,13:54:00,Desktop,21.91,No,14,4,Sunday
+09273002005123,Composite UPS Mudila,7,session12,2026-03-24,12:49:00,Desktop,9.46,Yes,12,3,Tuesday
+09273001002086,Composite UPS Mahrajganj,8,session17,2026-03-16,09:40:00,Desktop,33.19,Yes,11,3,Monday
+09273001002028,Composite UPS Mahrajganj,8,session17,2026-03-15,13:40:00,Mobile,42.5,No,11,3,Sunday
+09273001001156,Composite UPS Narayanpur,7,session18,2026-03-13,19:41:00,Desktop,36.34,Yes,10,3,Friday
+09273002004356,Composite UPS Fulwariya,7,session2,2026-03-11,12:57:00,Mobile,39.94,Yes,10,3,Wednesday
+09273002005228,Composite UPS Mudila,6,session11,2026-04-03,21:22:00,Mobile,22.22,No,13,4,Friday
+09273002004170,Composite UPS Fulwariya,6,session7,2026-04-09,08:52:00,Mobile,38.67,No,14,4,Thursday
+09273001001232,Composite UPS Narayanpur,8,session20,2026-03-25,15:07:00,Desktop,11.81,No,12,3,Wednesday
+09273002004014,Composite UPS Fulwariya,7,session7,2026-03-23,09:54:00,Mobile,15.96,No,12,3,Monday
+09273002005002,Composite UPS Mudila,8,session17,2026-04-01,21:08:00,Mobile,8.69,Yes,13,4,Wednesday
+09273002004255,Composite UPS Fulwariya,6,session5,2026-03-30,17:01:00,Desktop,47.91,Yes,13,3,Monday
+09273002004342,Composite UPS Fulwariya,7,session14,2026-04-13,08:52:00,Mobile,46.8,No,15,4,Monday
+09273001001386,Composite UPS Narayanpur,7,session5,2026-03-12,13:34:00,Mobile,14.95,Yes,10,3,Thursday
+09273002005273,Composite UPS Mudila,7,session20,2026-03-15,16:25:00,Mobile,49.57,Yes,11,3,Sunday
+09273001001321,Composite UPS Narayanpur,7,session20,2026-04-03,08:37:00,Mobile,42.7,Yes,13,4,Friday
+09273001001263,Composite UPS Narayanpur,7,session8,2026-03-17,11:59:00,Mobile,24.56,No,11,3,Tuesday
+09273001002040,Composite UPS Mahrajganj,6,session11,2026-04-11,15:18:00,Desktop,11.49,Yes,14,4,Saturday
+09273002004082,Composite UPS Fulwariya,6,session14,2026-04-09,21:53:00,Mobile,3.73,No,14,4,Thursday
+09273002004289,Composite UPS Fulwariya,7,session5,2026-03-24,08:19:00,Desktop,34.67,Yes,12,3,Tuesday
+09273001001184,Composite UPS Narayanpur,6,session2,2026-04-03,19:30:00,Mobile,15.87,No,13,4,Friday
+09273002004275,Composite UPS Fulwariya,8,session17,2026-04-10,18:43:00,Mobile,10.85,Yes,14,4,Friday
+09273001002308,Composite UPS Mahrajganj,6,session17,2026-04-03,18:15:00,Desktop,36.26,Yes,13,4,Friday
+09273002005078,Composite UPS Mudila,6,session17,2026-04-04,11:50:00,Mobile,31.91,Yes,13,4,Saturday
+09273002004250,Composite UPS Fulwariya,6,session20,2026-03-24,20:19:00,Desktop,18.2,No,12,3,Tuesday
+09273002004083,Composite UPS Fulwariya,8,session12,2026-04-02,21:24:00,Mobile,36.35,Yes,13,4,Thursday
+09273001001118,Composite UPS Narayanpur,7,session12,2026-04-04,10:08:00,Desktop,24.29,No,13,4,Saturday
+09273002004244,Composite UPS Fulwariya,8,session20,2026-03-17,13:04:00,Mobile,8.85,Yes,11,3,Tuesday
+09273001001345,Composite UPS Narayanpur,7,session3,2026-04-04,12:09:00,Desktop,8.81,No,13,4,Saturday
+09273002004187,Composite UPS Fulwariya,8,session5,2026-04-13,12:54:00,Mobile,22.27,No,15,4,Monday
+09273002004371,Composite UPS Fulwariya,6,session18,2026-04-06,15:16:00,Mobile,21.36,No,14,4,Monday
+09273001002141,Composite UPS Mahrajganj,6,session13,2026-03-24,08:31:00,Desktop,3.07,Yes,12,3,Tuesday
+09273002004151,Composite UPS Fulwariya,7,session10,2026-03-22,13:36:00,Mobile,43.47,Yes,12,3,Sunday
+09273001002255,Composite UPS Mahrajganj,7,session16,2026-04-12,09:43:00,Mobile,13.91,Yes,15,4,Sunday
+09273001001086,Composite UPS Narayanpur,6,session13,2026-04-12,13:04:00,Desktop,34.54,No,15,4,Sunday
+09273002004109,Composite UPS Fulwariya,6,session12,2026-04-03,09:56:00,Mobile,19.58,No,13,4,Friday
+09273001002382,Composite UPS Mahrajganj,7,session15,2026-03-27,13:27:00,Desktop,14.92,No,12,3,Friday
+09273002005127,Composite UPS Mudila,8,session14,2026-03-19,13:38:00,Desktop,19.59,Yes,11,3,Thursday
+09273001002184,Composite UPS Mahrajganj,8,session6,2026-04-02,17:32:00,Desktop,39.16,No,13,4,Thursday
+09273001003373,UPS Sanjhai,6,session16,2026-03-20,18:25:00,Desktop,5.22,No,11,3,Friday
+09273001002244,Composite UPS Mahrajganj,6,session15,2026-03-23,21:54:00,Mobile,27.83,No,12,3,Monday
+09273001002102,Composite UPS Mahrajganj,7,session15,2026-04-10,20:32:00,Mobile,38.57,Yes,14,4,Friday
+09273001002320,Composite UPS Mahrajganj,6,session5,2026-03-20,13:32:00,Desktop,44.52,Yes,11,3,Friday
+09273001002367,Composite UPS Mahrajganj,7,session8,2026-03-09,11:39:00,Mobile,4.4,No,10,3,Monday
+09273001002061,Composite UPS Mahrajganj,6,session10,2026-03-28,10:11:00,Mobile,21.7,No,12,3,Saturday
+09273002004125,Composite UPS Fulwariya,7,session18,2026-03-26,08:48:00,Desktop,31.84,No,12,3,Thursday
+09273002004373,Composite UPS Fulwariya,8,session2,2026-03-31,15:49:00,Desktop,3.33,No,13,3,Tuesday
+09273002005353,Composite UPS Mudila,8,session18,2026-03-09,12:58:00,Desktop,31.23,Yes,10,3,Monday
+09273001001182,Composite UPS Narayanpur,6,session7,2026-03-26,13:23:00,Desktop,16.81,No,12,3,Thursday
+09273001003043,UPS Sanjhai,6,session7,2026-03-26,12:21:00,Desktop,4.05,Yes,12,3,Thursday
+09273002005332,Composite UPS Mudila,6,session17,2026-03-18,16:30:00,Desktop,39.28,No,11,3,Wednesday
+09273001002125,Composite UPS Mahrajganj,8,session18,2026-03-12,12:59:00,Mobile,3.23,Yes,10,3,Thursday
+09273002004197,Composite UPS Fulwariya,7,session6,2026-04-05,18:00:00,Mobile,11.04,No,14,4,Sunday
+09273001003188,UPS Sanjhai,6,session2,2026-03-16,15:30:00,Desktop,46.78,Yes,11,3,Monday
+09273001001320,Composite UPS Narayanpur,6,session17,2026-04-11,14:32:00,Desktop,8.32,Yes,14,4,Saturday
+09273002005312,Composite UPS Mudila,7,session4,2026-04-12,13:52:00,Mobile,5.24,Yes,15,4,Sunday
+09273001001125,Composite UPS Narayanpur,7,session4,2026-03-18,21:55:00,Desktop,29.48,No,11,3,Wednesday
+09273001001081,Composite UPS Narayanpur,8,session20,2026-04-03,14:03:00,Desktop,26.52,No,13,4,Friday
+09273001001367,Composite UPS Narayanpur,8,session10,2026-04-03,11:05:00,Desktop,47.6,Yes,13,4,Friday
+09273002005191,Composite UPS Mudila,8,session11,2026-04-04,15:22:00,Mobile,44.36,No,13,4,Saturday
+09273001001245,Composite UPS Narayanpur,8,session9,2026-03-17,11:51:00,Mobile,8.18,Yes,11,3,Tuesday
+09273001001080,Composite UPS Narayanpur,7,session4,2026-03-26,13:02:00,Desktop,20.45,No,12,3,Thursday
+09273001001202,Composite UPS Narayanpur,7,session13,2026-03-16,12:33:00,Mobile,12.68,No,11,3,Monday
+09273002005018,Composite UPS Mudila,6,session11,2026-03-22,16:21:00,Desktop,11.34,No,12,3,Sunday
+09273001003329,UPS Sanjhai,7,session4,2026-03-25,10:24:00,Mobile,41.36,Yes,12,3,Wednesday
+09273002004384,Composite UPS Fulwariya,8,session4,2026-03-14,20:42:00,Desktop,22.21,No,10,3,Saturday
+09273001003182,UPS Sanjhai,7,session7,2026-04-06,14:54:00,Desktop,20.27,No,14,4,Monday
+09273002004062,Composite UPS Fulwariya,6,session1,2026-03-29,16:36:00,Mobile,42.91,Yes,13,3,Sunday
+09273002005240,Composite UPS Mudila,6,session5,2026-04-01,21:48:00,Desktop,6.95,Yes,13,4,Wednesday
+09273001001359,Composite UPS Narayanpur,8,session10,2026-03-17,11:43:00,Desktop,49.2,Yes,11,3,Tuesday
+09273001001354,Composite UPS Narayanpur,7,session17,2026-03-10,12:16:00,Desktop,25.96,No,10,3,Tuesday
+09273002004380,Composite UPS Fulwariya,6,session2,2026-04-07,12:26:00,Desktop,35.48,No,14,4,Tuesday
+09273001001124,Composite UPS Narayanpur,6,session14,2026-04-04,11:12:00,Desktop,8.67,No,13,4,Saturday
+09273001003264,UPS Sanjhai,8,session14,2026-03-20,18:08:00,Mobile,44.51,Yes,11,3,Friday
+09273001001387,Composite UPS Narayanpur,8,session5,2026-03-24,16:39:00,Desktop,21.33,Yes,12,3,Tuesday
+09273001001310,Composite UPS Narayanpur,6,session10,2026-04-11,15:56:00,Mobile,49.05,No,14,4,Saturday
+09273002004273,Composite UPS Fulwariya,6,session20,2026-03-20,20:32:00,Mobile,4.96,Yes,11,3,Friday
+09273002005293,Composite UPS Mudila,8,session17,2026-03-21,17:32:00,Mobile,23.4,No,11,3,Saturday
+09273001001227,Composite UPS Narayanpur,6,session18,2026-04-13,21:45:00,Mobile,21.42,Yes,15,4,Monday
+09273001002396,Composite UPS Mahrajganj,7,session9,2026-03-26,18:36:00,Mobile,14.71,Yes,12,3,Thursday
+09273002005208,Composite UPS Mudila,7,session4,2026-03-20,12:33:00,Mobile,43.55,No,11,3,Friday
+09273002005032,Composite UPS Mudila,7,session16,2026-04-09,16:20:00,Mobile,33.99,Yes,14,4,Thursday
+09273001001009,Composite UPS Narayanpur,6,session7,2026-03-27,14:11:00,Mobile,7.01,No,12,3,Friday
+09273001001384,Composite UPS Narayanpur,7,session1,2026-03-10,08:29:00,Desktop,25.74,Yes,10,3,Tuesday
+09273002004346,Composite UPS Fulwariya,8,session11,2026-04-10,11:08:00,Mobile,19.31,Yes,14,4,Friday
+09273001002400,Composite UPS Mahrajganj,6,session3,2026-03-11,10:38:00,Desktop,45.95,Yes,10,3,Wednesday
+09273002005041,Composite UPS Mudila,6,session12,2026-04-03,11:21:00,Mobile,4.51,Yes,13,4,Friday
+09273002005097,Composite UPS Mudila,6,session1,2026-03-28,17:09:00,Desktop,14.34,No,12,3,Saturday
+09273002004042,Composite UPS Fulwariya,6,session6,2026-03-23,19:17:00,Mobile,10.38,No,12,3,Monday
+09273001002312,Composite UPS Mahrajganj,6,session12,2026-04-04,11:43:00,Desktop,42.79,Yes,13,4,Saturday
+09273001003274,UPS Sanjhai,8,session8,2026-03-25,15:01:00,Desktop,8.03,Yes,12,3,Wednesday
+09273001001020,Composite UPS Narayanpur,8,session3,2026-03-15,08:13:00,Mobile,8.06,Yes,11,3,Sunday
+09273001003384,UPS Sanjhai,6,session12,2026-03-18,14:55:00,Desktop,7.9,No,11,3,Wednesday
+09273001002239,Composite UPS Mahrajganj,8,session19,2026-04-05,19:57:00,Desktop,7.96,Yes,14,4,Sunday
+09273001001276,Composite UPS Narayanpur,7,session1,2026-04-11,14:18:00,Desktop,41.36,No,14,4,Saturday
+09273001003257,UPS Sanjhai,8,session4,2026-03-26,09:41:00,Desktop,46.72,No,12,3,Thursday
+09273001001075,Composite UPS Narayanpur,6,session10,2026-03-23,17:35:00,Desktop,24.59,Yes,12,3,Monday
+09273001001137,Composite UPS Narayanpur,7,session3,2026-03-26,21:28:00,Desktop,6.8,Yes,12,3,Thursday
+09273001002157,Composite UPS Mahrajganj,6,session10,2026-04-10,13:19:00,Mobile,7.6,Yes,14,4,Friday
+09273001003034,UPS Sanjhai,6,session19,2026-03-19,21:04:00,Mobile,43.75,No,11,3,Thursday
+09273002004286,Composite UPS Fulwariya,7,session1,2026-04-06,12:30:00,Desktop,7.09,No,14,4,Monday
+09273002004037,Composite UPS Fulwariya,7,session4,2026-03-29,20:01:00,Desktop,17.1,Yes,13,3,Sunday
+09273001001258,Composite UPS Narayanpur,6,session20,2026-03-26,19:48:00,Mobile,30.96,Yes,12,3,Thursday
+09273001001397,Composite UPS Narayanpur,6,session3,2026-04-01,12:56:00,Desktop,2.87,Yes,13,4,Wednesday
+09273002004091,Composite UPS Fulwariya,8,session1,2026-03-22,12:30:00,Mobile,25.41,No,12,3,Sunday
+09273001002160,Composite UPS Mahrajganj,6,session3,2026-03-18,11:43:00,Desktop,18.22,No,11,3,Wednesday
+09273002004375,Composite UPS Fulwariya,6,session17,2026-03-25,10:13:00,Desktop,4.29,No,12,3,Wednesday
+09273001003183,UPS Sanjhai,7,session15,2026-04-08,13:37:00,Desktop,3.09,No,14,4,Wednesday
+09273001001045,Composite UPS Narayanpur,8,session19,2026-04-06,21:34:00,Mobile,42.65,Yes,14,4,Monday
+09273002005370,Composite UPS Mudila,7,session1,2026-03-28,17:48:00,Mobile,41.95,Yes,12,3,Saturday
+09273001001145,Composite UPS Narayanpur,6,session14,2026-04-05,12:27:00,Desktop,19.33,No,14,4,Sunday
+09273001003343,UPS Sanjhai,6,session12,2026-03-17,14:26:00,Desktop,20.47,Yes,11,3,Tuesday
+09273002005368,Composite UPS Mudila,7,session19,2026-03-24,14:26:00,Mobile,49.36,No,12,3,Tuesday
+09273001003202,UPS Sanjhai,6,session15,2026-03-26,08:42:00,Desktop,36.24,Yes,12,3,Thursday
+09273002005377,Composite UPS Mudila,6,session8,2026-03-17,13:40:00,Desktop,43.04,No,11,3,Tuesday
+09273001002364,Composite UPS Mahrajganj,7,session7,2026-03-10,12:28:00,Mobile,48.54,No,10,3,Tuesday
+09273001003360,UPS Sanjhai,6,session13,2026-04-12,09:16:00,Mobile,18.02,Yes,15,4,Sunday
+09273002004245,Composite UPS Fulwariya,7,session5,2026-03-21,13:01:00,Desktop,38.22,Yes,11,3,Saturday
+09273001002234,Composite UPS Mahrajganj,6,session6,2026-03-23,13:30:00,Mobile,36.49,Yes,12,3,Monday
+09273001003320,UPS Sanjhai,8,session11,2026-04-07,13:39:00,Mobile,10.26,No,14,4,Tuesday
+09273002005056,Composite UPS Mudila,8,session12,2026-04-06,13:04:00,Mobile,2.11,No,14,4,Monday
+09273001001151,Composite UPS Narayanpur,6,session10,2026-03-14,16:46:00,Desktop,38.95,Yes,10,3,Saturday
+09273001003226,UPS Sanjhai,6,session3,2026-04-07,14:28:00,Desktop,28.0,Yes,14,4,Tuesday
+09273001003379,UPS Sanjhai,7,session7,2026-03-24,12:57:00,Desktop,34.55,No,12,3,Tuesday
+09273002005218,Composite UPS Mudila,8,session3,2026-03-26,09:28:00,Desktop,33.58,No,12,3,Thursday
+09273001003280,UPS Sanjhai,6,session15,2026-03-28,15:39:00,Mobile,37.08,No,12,3,Saturday
+09273001002281,Composite UPS Mahrajganj,7,session18,2026-03-21,11:26:00,Mobile,33.64,No,11,3,Saturday
+09273002005087,Composite UPS Mudila,8,session15,2026-03-13,14:59:00,Mobile,36.31,No,10,3,Friday
+09273002004115,Composite UPS Fulwariya,6,session8,2026-03-09,16:31:00,Desktop,49.62,Yes,10,3,Monday
+09273001001082,Composite UPS Narayanpur,7,session5,2026-03-21,12:09:00,Desktop,17.96,Yes,11,3,Saturday
+09273001002233,Composite UPS Mahrajganj,8,session9,2026-04-13,18:22:00,Mobile,27.07,Yes,15,4,Monday
+09273001003147,UPS Sanjhai,7,session11,2026-03-27,14:52:00,Mobile,48.97,No,12,3,Friday
+09273001002289,Composite UPS Mahrajganj,6,session19,2026-03-20,12:26:00,Mobile,14.13,Yes,11,3,Friday
+09273002004265,Composite UPS Fulwariya,7,session9,2026-03-21,19:15:00,Desktop,8.28,Yes,11,3,Saturday
+09273001002185,Composite UPS Mahrajganj,8,session19,2026-03-15,13:03:00,Mobile,13.36,No,11,3,Sunday
+09273001002191,Composite UPS Mahrajganj,6,session1,2026-04-05,21:27:00,Desktop,28.08,Yes,14,4,Sunday
+09273002005373,Composite UPS Mudila,7,session4,2026-04-13,19:26:00,Desktop,28.21,Yes,15,4,Monday
+09273001001317,Composite UPS Narayanpur,7,session16,2026-04-11,14:06:00,Desktop,2.55,Yes,14,4,Saturday
+09273001002128,Composite UPS Mahrajganj,8,session12,2026-04-05,21:28:00,Mobile,34.39,No,14,4,Sunday
+09273001003102,UPS Sanjhai,6,session13,2026-04-07,15:57:00,Desktop,35.0,Yes,14,4,Tuesday
+09273002004073,Composite UPS Fulwariya,7,session20,2026-03-23,11:12:00,Mobile,38.05,Yes,12,3,Monday
+09273002005202,Composite UPS Mudila,8,session4,2026-03-16,21:08:00,Mobile,22.39,No,11,3,Monday
+09273002005284,Composite UPS Mudila,8,session9,2026-03-11,17:57:00,Desktop,43.89,No,10,3,Wednesday
+09273001003153,UPS Sanjhai,6,session5,2026-04-02,14:25:00,Desktop,40.91,Yes,13,4,Thursday
+09273001002240,Composite UPS Mahrajganj,6,session11,2026-03-23,18:18:00,Mobile,37.12,Yes,12,3,Monday
+09273002004127,Composite UPS Fulwariya,6,session14,2026-03-21,21:55:00,Mobile,35.6,Yes,11,3,Saturday
+09273001002347,Composite UPS Mahrajganj,8,session17,2026-03-23,15:16:00,Desktop,35.87,Yes,12,3,Monday
+09273002005363,Composite UPS Mudila,8,session8,2026-03-29,15:36:00,Mobile,25.01,Yes,13,3,Sunday
+09273001001234,Composite UPS Narayanpur,8,session4,2026-04-06,11:31:00,Desktop,18.81,No,14,4,Monday
+09273001001323,Composite UPS Narayanpur,6,session4,2026-04-03,14:04:00,Mobile,22.05,Yes,13,4,Friday
+09273001001268,Composite UPS Narayanpur,8,session7,2026-04-04,16:27:00,Mobile,21.73,No,13,4,Saturday
+09273002005247,Composite UPS Mudila,8,session15,2026-03-24,08:33:00,Desktop,16.05,Yes,12,3,Tuesday
+09273001003098,UPS Sanjhai,8,session10,2026-03-10,18:12:00,Mobile,42.27,No,10,3,Tuesday
+09273001003043,UPS Sanjhai,7,session4,2026-04-03,10:44:00,Desktop,29.28,No,13,4,Friday
+09273001002383,Composite UPS Mahrajganj,6,session10,2026-03-09,08:21:00,Desktop,41.18,Yes,10,3,Monday
+09273002005091,Composite UPS Mudila,8,session11,2026-03-15,16:34:00,Mobile,29.44,No,11,3,Sunday
+09273002004216,Composite UPS Fulwariya,6,session5,2026-04-07,16:12:00,Mobile,33.03,Yes,14,4,Tuesday
+09273002004368,Composite UPS Fulwariya,8,session4,2026-03-29,11:00:00,Mobile,11.57,Yes,13,3,Sunday
+09273001001056,Composite UPS Narayanpur,7,session7,2026-03-28,21:09:00,Mobile,2.42,Yes,12,3,Saturday
+09273001002110,Composite UPS Mahrajganj,7,session14,2026-04-13,08:18:00,Mobile,46.8,No,15,4,Monday
+09273001002164,Composite UPS Mahrajganj,8,session17,2026-03-17,19:41:00,Mobile,15.71,No,11,3,Tuesday
+09273001003008,UPS Sanjhai,8,session9,2026-03-31,10:18:00,Desktop,34.47,No,13,3,Tuesday
+09273001001184,Composite UPS Narayanpur,8,session18,2026-03-14,11:50:00,Desktop,9.57,Yes,10,3,Saturday
+09273002005332,Composite UPS Mudila,8,session2,2026-04-02,12:51:00,Desktop,45.49,No,13,4,Thursday
+09273001002393,Composite UPS Mahrajganj,6,session14,2026-03-22,15:26:00,Desktop,30.6,Yes,12,3,Sunday
+09273001003013,UPS Sanjhai,6,session4,2026-04-12,12:49:00,Desktop,5.81,Yes,15,4,Sunday
+09273001002216,Composite UPS Mahrajganj,6,session5,2026-03-09,11:24:00,Mobile,45.8,No,10,3,Monday
+09273001002291,Composite UPS Mahrajganj,7,session12,2026-04-09,14:28:00,Mobile,20.28,Yes,14,4,Thursday
+09273001002068,Composite UPS Mahrajganj,8,session2,2026-03-16,17:52:00,Desktop,8.23,Yes,11,3,Monday
+09273001003206,UPS Sanjhai,7,session3,2026-04-10,11:27:00,Desktop,14.32,No,14,4,Friday
+09273001002341,Composite UPS Mahrajganj,6,session1,2026-04-11,09:41:00,Mobile,46.28,Yes,14,4,Saturday
+09273001001077,Composite UPS Narayanpur,8,session11,2026-03-21,10:24:00,Desktop,30.39,No,11,3,Saturday
+09273002005210,Composite UPS Mudila,7,session17,2026-03-17,15:37:00,Mobile,16.73,Yes,11,3,Tuesday
+09273001001371,Composite UPS Narayanpur,8,session5,2026-04-08,08:52:00,Mobile,22.07,No,14,4,Wednesday
+09273001003026,UPS Sanjhai,8,session3,2026-03-23,17:52:00,Desktop,16.3,Yes,12,3,Monday
+09273002005140,Composite UPS Mudila,7,session12,2026-03-23,13:59:00,Mobile,25.4,No,12,3,Monday
+09273002004274,Composite UPS Fulwariya,8,session9,2026-04-12,11:03:00,Mobile,15.91,No,15,4,Sunday
+09273002005029,Composite UPS Mudila,7,session6,2026-04-09,14:31:00,Mobile,18.6,Yes,14,4,Thursday
+09273002004382,Composite UPS Fulwariya,6,session10,2026-04-03,17:13:00,Mobile,43.45,No,13,4,Friday
+09273002005160,Composite UPS Mudila,7,session11,2026-03-10,14:58:00,Desktop,25.33,Yes,10,3,Tuesday
+09273001002305,Composite UPS Mahrajganj,6,session14,2026-03-22,17:41:00,Mobile,20.76,No,12,3,Sunday
+09273001001285,Composite UPS Narayanpur,6,session17,2026-04-08,13:42:00,Mobile,32.51,No,14,4,Wednesday
+09273002004172,Composite UPS Fulwariya,7,session14,2026-03-26,18:38:00,Mobile,15.98,No,12,3,Thursday
+09273002004030,Composite UPS Fulwariya,6,session16,2026-03-17,12:59:00,Mobile,22.94,No,11,3,Tuesday
+09273001003077,UPS Sanjhai,6,session10,2026-03-20,10:16:00,Mobile,21.13,Yes,11,3,Friday
+09273002005235,Composite UPS Mudila,6,session2,2026-03-24,14:07:00,Mobile,41.28,Yes,12,3,Tuesday
+09273002005343,Composite UPS Mudila,8,session13,2026-03-30,11:20:00,Mobile,35.71,Yes,13,3,Monday
+09273001002171,Composite UPS Mahrajganj,8,session1,2026-03-22,13:40:00,Mobile,14.12,Yes,12,3,Sunday
+09273002005110,Composite UPS Mudila,7,session14,2026-04-13,14:45:00,Mobile,42.93,No,15,4,Monday
+09273001001127,Composite UPS Narayanpur,8,session3,2026-03-22,21:36:00,Desktop,33.82,Yes,12,3,Sunday
+09273001001264,Composite UPS Narayanpur,6,session5,2026-04-05,11:09:00,Desktop,14.74,Yes,14,4,Sunday
+09273002005150,Composite UPS Mudila,7,session10,2026-03-10,15:56:00,Desktop,49.89,Yes,10,3,Tuesday
+09273002005330,Composite UPS Mudila,8,session5,2026-03-29,18:40:00,Desktop,33.05,Yes,13,3,Sunday
+09273001002339,Composite UPS Mahrajganj,8,session12,2026-03-13,19:17:00,Mobile,24.03,Yes,10,3,Friday
+09273001003079,UPS Sanjhai,7,session12,2026-03-30,17:40:00,Mobile,23.4,No,13,3,Monday
+09273001001042,Composite UPS Narayanpur,8,session12,2026-03-26,13:14:00,Desktop,11.98,Yes,12,3,Thursday
+09273001002220,Composite UPS Mahrajganj,6,session17,2026-03-10,14:37:00,Mobile,26.12,Yes,10,3,Tuesday
+09273001001398,Composite UPS Narayanpur,6,session13,2026-04-12,14:16:00,Desktop,39.14,No,15,4,Sunday
+09273002004371,Composite UPS Fulwariya,6,session20,2026-04-04,15:48:00,Mobile,11.74,No,13,4,Saturday
+09273001002233,Composite UPS Mahrajganj,7,session16,2026-03-24,20:37:00,Mobile,10.61,Yes,12,3,Tuesday
+09273001003068,UPS Sanjhai,6,session8,2026-03-31,14:01:00,Desktop,23.86,No,13,3,Tuesday
+09273002005041,Composite UPS Mudila,6,session14,2026-04-02,17:52:00,Mobile,46.14,Yes,13,4,Thursday
+09273002005024,Composite UPS Mudila,8,session10,2026-03-29,15:49:00,Mobile,36.41,Yes,13,3,Sunday
+09273002004386,Composite UPS Fulwariya,6,session11,2026-04-10,12:14:00,Desktop,31.75,No,14,4,Friday
+09273002005357,Composite UPS Mudila,8,session19,2026-04-04,13:50:00,Mobile,30.31,Yes,13,4,Saturday
+09273001001168,Composite UPS Narayanpur,8,session15,2026-04-13,21:54:00,Mobile,41.36,No,15,4,Monday
+09273001002396,Composite UPS Mahrajganj,7,session6,2026-03-13,10:03:00,Desktop,30.13,No,10,3,Friday
+09273001001048,Composite UPS Narayanpur,8,session20,2026-03-21,19:56:00,Desktop,3.63,Yes,11,3,Saturday
+09273001002154,Composite UPS Mahrajganj,7,session11,2026-03-11,13:54:00,Mobile,32.03,Yes,10,3,Wednesday
+09273002005223,Composite UPS Mudila,6,session3,2026-03-14,15:09:00,Mobile,40.0,No,10,3,Saturday
+09273001001084,Composite UPS Narayanpur,8,session6,2026-03-27,21:46:00,Desktop,30.57,Yes,12,3,Friday
+09273001003258,UPS Sanjhai,8,session14,2026-03-11,21:23:00,Desktop,20.69,No,10,3,Wednesday
+09273001001252,Composite UPS Narayanpur,8,session5,2026-03-16,10:26:00,Mobile,28.68,No,11,3,Monday
+09273002005387,Composite UPS Mudila,6,session10,2026-03-18,19:24:00,Desktop,14.41,No,11,3,Wednesday
+09273002005335,Composite UPS Mudila,6,session19,2026-04-12,17:10:00,Desktop,29.59,No,15,4,Sunday
+09273002005231,Composite UPS Mudila,6,session10,2026-04-07,08:00:00,Desktop,43.04,No,14,4,Tuesday
+09273001003140,UPS Sanjhai,6,session15,2026-03-18,21:45:00,Desktop,18.54,No,11,3,Wednesday
+09273001001062,Composite UPS Narayanpur,6,session19,2026-03-26,09:10:00,Mobile,12.81,No,12,3,Thursday
+09273002004245,Composite UPS Fulwariya,6,session11,2026-04-06,20:01:00,Desktop,30.15,No,14,4,Monday
+09273001001121,Composite UPS Narayanpur,8,session12,2026-03-13,19:47:00,Mobile,42.14,Yes,10,3,Friday
+09273001001246,Composite UPS Narayanpur,7,session5,2026-04-13,11:36:00,Mobile,19.54,No,15,4,Monday
+09273001001135,Composite UPS Narayanpur,6,session8,2026-04-10,18:44:00,Desktop,48.36,No,14,4,Friday
+09273001003009,UPS Sanjhai,8,session13,2026-03-14,16:50:00,Desktop,8.87,No,10,3,Saturday
+09273001001281,Composite UPS Narayanpur,7,session12,2026-04-03,08:21:00,Desktop,43.14,Yes,13,4,Friday
+09273001001167,Composite UPS Narayanpur,8,session4,2026-03-28,08:25:00,Mobile,49.33,Yes,12,3,Saturday
+09273001002120,Composite UPS Mahrajganj,6,session2,2026-03-18,18:49:00,Desktop,36.48,Yes,11,3,Wednesday
+09273002004325,Composite UPS Fulwariya,7,session8,2026-03-28,18:50:00,Mobile,44.54,No,12,3,Saturday
+09273002005254,Composite UPS Mudila,6,session18,2026-03-27,08:29:00,Desktop,11.36,No,12,3,Friday
+09273002004036,Composite UPS Fulwariya,6,session5,2026-04-06,13:59:00,Desktop,7.45,Yes,14,4,Monday
+09273002005107,Composite UPS Mudila,8,session3,2026-03-31,09:58:00,Mobile,43.48,Yes,13,3,Tuesday
+09273002004229,Composite UPS Fulwariya,7,session11,2026-04-13,11:50:00,Desktop,7.57,Yes,15,4,Monday
+09273002005367,Composite UPS Mudila,6,session3,2026-03-20,13:05:00,Mobile,39.16,No,11,3,Friday
+09273002004150,Composite UPS Fulwariya,8,session20,2026-03-15,12:43:00,Desktop,22.96,No,11,3,Sunday
+09273001003074,UPS Sanjhai,7,session15,2026-03-11,19:28:00,Desktop,43.1,No,10,3,Wednesday
+09273001002071,Composite UPS Mahrajganj,7,session10,2026-03-19,20:27:00,Desktop,17.14,No,11,3,Thursday
+09273002004223,Composite UPS Fulwariya,8,session16,2026-04-11,13:06:00,Mobile,36.76,No,14,4,Saturday
+09273002005112,Composite UPS Mudila,6,session5,2026-03-20,09:09:00,Desktop,19.14,Yes,11,3,Friday
+09273002005362,Composite UPS Mudila,6,session2,2026-03-09,14:44:00,Desktop,44.26,No,10,3,Monday
+09273002004244,Composite UPS Fulwariya,8,session16,2026-04-09,19:26:00,Desktop,45.68,Yes,14,4,Thursday
+09273002005247,Composite UPS Mudila,6,session16,2026-03-19,21:10:00,Desktop,9.77,No,11,3,Thursday
+09273001002244,Composite UPS Mahrajganj,8,session15,2026-03-15,19:59:00,Mobile,32.54,No,11,3,Sunday
+09273002004176,Composite UPS Fulwariya,6,session15,2026-04-03,12:38:00,Desktop,14.8,Yes,13,4,Friday
+09273001003389,UPS Sanjhai,6,session20,2026-04-12,09:05:00,Desktop,10.58,No,15,4,Sunday
+09273001002301,Composite UPS Mahrajganj,7,session10,2026-03-11,17:21:00,Desktop,7.33,No,10,3,Wednesday
+09273001003204,UPS Sanjhai,7,session5,2026-04-03,15:39:00,Mobile,11.39,No,13,4,Friday
+09273002004013,Composite UPS Fulwariya,8,session12,2026-03-24,09:29:00,Mobile,41.51,No,12,3,Tuesday
+09273001001281,Composite UPS Narayanpur,8,session19,2026-04-11,12:39:00,Mobile,42.11,Yes,14,4,Saturday
+09273002005220,Composite UPS Mudila,7,session1,2026-04-08,18:55:00,Mobile,19.45,Yes,14,4,Wednesday
+09273001001348,Composite UPS Narayanpur,7,session16,2026-03-20,18:18:00,Mobile,43.75,Yes,11,3,Friday
+09273001001125,Composite UPS Narayanpur,8,session11,2026-03-13,21:36:00,Desktop,18.59,Yes,10,3,Friday
+09273001002118,Composite UPS Mahrajganj,8,session4,2026-03-13,17:55:00,Mobile,30.31,Yes,10,3,Friday
+09273001002265,Composite UPS Mahrajganj,8,session5,2026-04-10,08:53:00,Desktop,29.24,Yes,14,4,Friday
+09273001003121,UPS Sanjhai,7,session17,2026-03-17,11:17:00,Mobile,3.88,No,11,3,Tuesday
+09273001003019,UPS Sanjhai,7,session3,2026-03-09,15:45:00,Desktop,48.32,No,10,3,Monday
+09273001003291,UPS Sanjhai,8,session10,2026-03-19,08:57:00,Mobile,13.44,Yes,11,3,Thursday
+09273002005318,Composite UPS Mudila,6,session15,2026-03-09,20:25:00,Mobile,11.02,Yes,10,3,Monday
+09273001003127,UPS Sanjhai,7,session11,2026-03-19,11:22:00,Desktop,2.41,No,11,3,Thursday
+09273002005050,Composite UPS Mudila,7,session1,2026-03-09,12:52:00,Mobile,38.67,No,10,3,Monday
+09273001003373,UPS Sanjhai,7,session6,2026-03-25,16:18:00,Mobile,45.26,No,12,3,Wednesday
+09273001002147,Composite UPS Mahrajganj,8,session4,2026-03-14,11:07:00,Desktop,29.23,Yes,10,3,Saturday
+09273002005222,Composite UPS Mudila,8,session8,2026-04-03,11:37:00,Mobile,34.1,Yes,13,4,Friday
+09273002005132,Composite UPS Mudila,8,session20,2026-03-21,15:34:00,Mobile,17.4,No,11,3,Saturday
+09273002005396,Composite UPS Mudila,8,session12,2026-03-30,10:20:00,Mobile,33.02,Yes,13,3,Monday
+09273002005038,Composite UPS Mudila,6,session13,2026-04-11,20:50:00,Desktop,8.29,No,14,4,Saturday
+09273001002096,Composite UPS Mahrajganj,7,session13,2026-03-27,19:43:00,Desktop,40.75,No,12,3,Friday
+09273002005226,Composite UPS Mudila,6,session5,2026-03-22,12:05:00,Mobile,37.24,Yes,12,3,Sunday
+09273001003152,UPS Sanjhai,6,session18,2026-03-18,21:15:00,Mobile,19.05,Yes,11,3,Wednesday
+09273001002325,Composite UPS Mahrajganj,8,session19,2026-03-11,18:08:00,Mobile,9.52,Yes,10,3,Wednesday
+09273001003141,UPS Sanjhai,7,session20,2026-04-13,20:26:00,Desktop,11.95,No,15,4,Monday
+09273001002223,Composite UPS Mahrajganj,7,session9,2026-03-15,15:34:00,Desktop,17.59,No,11,3,Sunday
+09273001001192,Composite UPS Narayanpur,6,session10,2026-04-03,09:21:00,Mobile,37.28,No,13,4,Friday
+09273001002146,Composite UPS Mahrajganj,8,session15,2026-03-20,15:20:00,Mobile,23.74,Yes,11,3,Friday
+09273001003388,UPS Sanjhai,6,session5,2026-03-30,21:29:00,Desktop,13.66,Yes,13,3,Monday
+09273002004050,Composite UPS Fulwariya,6,session6,2026-03-13,12:24:00,Desktop,29.63,No,10,3,Friday
+09273001001057,Composite UPS Narayanpur,8,session8,2026-03-18,14:50:00,Mobile,39.54,No,11,3,Wednesday
+09273001003292,UPS Sanjhai,6,session12,2026-04-06,10:29:00,Mobile,25.6,No,14,4,Monday
+09273001001202,Composite UPS Narayanpur,8,session2,2026-03-16,19:16:00,Mobile,24.57,No,11,3,Monday
+09273002005033,Composite UPS Mudila,6,session20,2026-04-01,10:20:00,Mobile,32.51,No,13,4,Wednesday
+09273002005120,Composite UPS Mudila,6,session4,2026-03-09,19:46:00,Desktop,7.76,Yes,10,3,Monday
+09273001001130,Composite UPS Narayanpur,6,session5,2026-03-19,21:07:00,Desktop,12.49,Yes,11,3,Thursday
+09273002004206,Composite UPS Fulwariya,8,session11,2026-04-03,16:35:00,Desktop,31.66,Yes,13,4,Friday
+09273001002389,Composite UPS Mahrajganj,8,session9,2026-03-25,19:00:00,Mobile,39.75,Yes,12,3,Wednesday
+09273001003208,UPS Sanjhai,6,session13,2026-03-12,12:42:00,Desktop,21.45,Yes,10,3,Thursday
+09273001002318,Composite UPS Mahrajganj,7,session1,2026-04-07,20:59:00,Mobile,36.6,No,14,4,Tuesday
+09273002005173,Composite UPS Mudila,7,session8,2026-03-11,08:35:00,Desktop,28.11,No,10,3,Wednesday
+09273001002065,Composite UPS Mahrajganj,8,session14,2026-03-23,11:55:00,Mobile,17.2,No,12,3,Monday
+09273001002216,Composite UPS Mahrajganj,7,session9,2026-03-27,18:28:00,Desktop,20.36,No,12,3,Friday
+09273002005147,Composite UPS Mudila,7,session6,2026-04-01,12:17:00,Desktop,13.15,No,13,4,Wednesday
+09273001002149,Composite UPS Mahrajganj,6,session5,2026-03-29,12:58:00,Mobile,31.04,No,13,3,Sunday
+09273002005360,Composite UPS Mudila,6,session15,2026-04-08,18:55:00,Mobile,24.49,Yes,14,4,Wednesday
+09273002005046,Composite UPS Mudila,8,session7,2026-03-15,19:34:00,Mobile,47.13,No,11,3,Sunday
+09273001003029,UPS Sanjhai,6,session18,2026-03-24,13:16:00,Desktop,43.77,No,12,3,Tuesday
+09273002005031,Composite UPS Mudila,6,session18,2026-04-07,17:07:00,Mobile,12.63,No,14,4,Tuesday
+09273002004070,Composite UPS Fulwariya,6,session4,2026-03-09,15:48:00,Desktop,14.83,No,10,3,Monday
+09273001002301,Composite UPS Mahrajganj,6,session8,2026-03-14,13:03:00,Mobile,10.8,Yes,10,3,Saturday
+09273002005122,Composite UPS Mudila,8,session10,2026-04-03,14:24:00,Mobile,30.05,Yes,13,4,Friday
+09273001002050,Composite UPS Mahrajganj,8,session12,2026-04-05,10:35:00,Mobile,24.55,No,14,4,Sunday
+09273002004171,Composite UPS Fulwariya,6,session10,2026-03-15,09:10:00,Mobile,21.96,No,11,3,Sunday
+09273001003137,UPS Sanjhai,7,session18,2026-03-26,14:43:00,Desktop,44.44,No,12,3,Thursday
+09273001003310,UPS Sanjhai,8,session7,2026-03-27,15:57:00,Desktop,48.75,No,12,3,Friday
+09273002004052,Composite UPS Fulwariya,6,session8,2026-04-01,17:21:00,Desktop,24.21,Yes,13,4,Wednesday
+09273002004389,Composite UPS Fulwariya,7,session4,2026-03-15,17:47:00,Desktop,35.75,Yes,11,3,Sunday
+09273002004372,Composite UPS Fulwariya,6,session12,2026-04-02,19:37:00,Desktop,25.64,Yes,13,4,Thursday
+09273002005032,Composite UPS Mudila,6,session3,2026-03-22,10:01:00,Mobile,37.43,Yes,12,3,Sunday
+09273002005276,Composite UPS Mudila,8,session16,2026-03-17,15:23:00,Mobile,31.85,Yes,11,3,Tuesday
+09273002005181,Composite UPS Mudila,6,session8,2026-03-25,11:09:00,Desktop,18.07,Yes,12,3,Wednesday
+09273002004175,Composite UPS Fulwariya,6,session13,2026-04-09,13:25:00,Desktop,18.9,Yes,14,4,Thursday
+09273001001106,Composite UPS Narayanpur,8,session12,2026-04-12,21:05:00,Mobile,15.13,Yes,15,4,Sunday
+09273001001163,Composite UPS Narayanpur,7,session16,2026-03-15,10:05:00,Desktop,25.53,No,11,3,Sunday
+09273001002244,Composite UPS Mahrajganj,7,session6,2026-03-11,13:55:00,Mobile,11.68,No,10,3,Wednesday
+09273001001207,Composite UPS Narayanpur,7,session17,2026-03-25,08:03:00,Mobile,47.23,Yes,12,3,Wednesday
+09273002004323,Composite UPS Fulwariya,7,session18,2026-03-12,19:08:00,Mobile,4.48,Yes,10,3,Thursday
+09273002005263,Composite UPS Mudila,8,session19,2026-03-18,15:26:00,Desktop,24.3,Yes,11,3,Wednesday
+09273002005395,Composite UPS Mudila,8,session15,2026-03-13,20:11:00,Mobile,30.05,Yes,10,3,Friday
+09273001001289,Composite UPS Narayanpur,8,session5,2026-03-30,12:04:00,Desktop,37.4,Yes,13,3,Monday
+09273001001121,Composite UPS Narayanpur,8,session14,2026-04-13,11:50:00,Mobile,11.57,Yes,15,4,Monday
+09273002005261,Composite UPS Mudila,8,session20,2026-03-26,18:04:00,Mobile,17.86,No,12,3,Thursday
+09273002004391,Composite UPS Fulwariya,6,session8,2026-03-25,11:57:00,Mobile,38.36,Yes,12,3,Wednesday
+09273001003113,UPS Sanjhai,6,session4,2026-03-31,15:02:00,Mobile,14.73,Yes,13,3,Tuesday
+09273001001169,Composite UPS Narayanpur,8,session19,2026-03-21,17:34:00,Mobile,46.69,No,11,3,Saturday
+09273002005151,Composite UPS Mudila,6,session16,2026-03-13,17:18:00,Desktop,35.09,No,10,3,Friday
+09273001002303,Composite UPS Mahrajganj,6,session4,2026-03-13,21:56:00,Mobile,19.42,No,10,3,Friday
+09273001002082,Composite UPS Mahrajganj,7,session1,2026-04-02,17:52:00,Mobile,22.75,No,13,4,Thursday
+09273001003026,UPS Sanjhai,6,session13,2026-04-11,21:15:00,Desktop,31.17,No,14,4,Saturday
+09273001001379,Composite UPS Narayanpur,6,session20,2026-04-10,11:10:00,Desktop,3.08,Yes,14,4,Friday
+09273001002396,Composite UPS Mahrajganj,7,session8,2026-03-20,12:36:00,Mobile,42.89,Yes,11,3,Friday
+09273002005386,Composite UPS Mudila,7,session16,2026-04-09,09:28:00,Desktop,2.91,Yes,14,4,Thursday
+09273001003310,UPS Sanjhai,8,session13,2026-03-12,18:20:00,Mobile,10.96,No,10,3,Thursday
+09273001001104,Composite UPS Narayanpur,6,session9,2026-03-25,09:00:00,Desktop,2.99,Yes,12,3,Wednesday
+09273002005309,Composite UPS Mudila,8,session6,2026-03-11,13:01:00,Mobile,46.97,Yes,10,3,Wednesday
+09273002004195,Composite UPS Fulwariya,6,session10,2026-03-12,19:28:00,Mobile,48.64,No,10,3,Thursday
+09273001002065,Composite UPS Mahrajganj,7,session16,2026-03-21,21:01:00,Desktop,16.44,No,11,3,Saturday
+09273002004358,Composite UPS Fulwariya,6,session11,2026-04-11,08:50:00,Desktop,43.76,No,14,4,Saturday
+09273001001023,Composite UPS Narayanpur,8,session1,2026-03-21,09:39:00,Desktop,15.44,No,11,3,Saturday
+09273001003136,UPS Sanjhai,7,session7,2026-04-04,09:11:00,Mobile,38.16,Yes,13,4,Saturday
+09273001001173,Composite UPS Narayanpur,6,session20,2026-03-26,21:11:00,Desktop,18.52,No,12,3,Thursday
+09273001001347,Composite UPS Narayanpur,7,session16,2026-03-16,10:19:00,Mobile,24.31,No,11,3,Monday
+09273002004123,Composite UPS Fulwariya,6,session6,2026-03-10,10:34:00,Desktop,35.13,No,10,3,Tuesday
+09273001003337,UPS Sanjhai,8,session16,2026-03-26,11:01:00,Desktop,31.44,Yes,12,3,Thursday
+09273001001173,Composite UPS Narayanpur,7,session16,2026-03-17,12:07:00,Mobile,35.73,No,11,3,Tuesday
+09273001001080,Composite UPS Narayanpur,8,session9,2026-03-27,16:45:00,Mobile,11.08,No,12,3,Friday
+09273001002153,Composite UPS Mahrajganj,7,session9,2026-03-24,11:21:00,Mobile,48.98,No,12,3,Tuesday
+09273001003245,UPS Sanjhai,7,session16,2026-03-10,14:37:00,Desktop,38.27,No,10,3,Tuesday
+09273002004219,Composite UPS Fulwariya,7,session5,2026-04-06,09:21:00,Desktop,10.27,Yes,14,4,Monday
+09273002004004,Composite UPS Fulwariya,7,session9,2026-04-11,14:53:00,Mobile,6.09,Yes,14,4,Saturday
+09273002004313,Composite UPS Fulwariya,8,session16,2026-03-26,13:20:00,Mobile,20.25,No,12,3,Thursday
+09273001002269,Composite UPS Mahrajganj,8,session15,2026-03-29,13:04:00,Desktop,48.99,No,13,3,Sunday
+09273002004006,Composite UPS Fulwariya,6,session2,2026-03-17,13:54:00,Desktop,43.22,Yes,11,3,Tuesday
+09273002004131,Composite UPS Fulwariya,8,session4,2026-03-15,12:46:00,Desktop,28.27,Yes,11,3,Sunday
+09273002005108,Composite UPS Mudila,7,session1,2026-03-20,17:50:00,Mobile,23.31,Yes,11,3,Friday
+09273001002354,Composite UPS Mahrajganj,7,session8,2026-03-30,12:01:00,Desktop,38.17,Yes,13,3,Monday
+09273002004369,Composite UPS Fulwariya,8,session11,2026-04-08,17:16:00,Desktop,49.95,Yes,14,4,Wednesday
+09273002004084,Composite UPS Fulwariya,6,session11,2026-03-17,21:56:00,Mobile,35.73,No,11,3,Tuesday
+09273001001334,Composite UPS Narayanpur,7,session9,2026-03-21,15:37:00,Desktop,48.96,No,11,3,Saturday
+09273002004353,Composite UPS Fulwariya,6,session4,2026-03-22,16:53:00,Mobile,46.36,Yes,12,3,Sunday
+09273002004242,Composite UPS Fulwariya,6,session8,2026-04-10,10:03:00,Desktop,37.07,Yes,14,4,Friday
+09273002005396,Composite UPS Mudila,8,session5,2026-03-18,20:28:00,Mobile,4.65,Yes,11,3,Wednesday
+09273001001129,Composite UPS Narayanpur,8,session9,2026-03-13,08:43:00,Desktop,41.1,Yes,10,3,Friday
+09273001003088,UPS Sanjhai,8,session10,2026-03-18,17:09:00,Mobile,7.83,No,11,3,Wednesday
+09273002004162,Composite UPS Fulwariya,8,session9,2026-03-12,18:08:00,Mobile,21.57,Yes,10,3,Thursday
+09273001001109,Composite UPS Narayanpur,6,session18,2026-04-11,12:59:00,Desktop,40.39,No,14,4,Saturday
+09273001003143,UPS Sanjhai,8,session3,2026-04-08,19:32:00,Mobile,13.07,Yes,14,4,Wednesday
+09273001002119,Composite UPS Mahrajganj,8,session15,2026-03-29,21:54:00,Mobile,36.44,Yes,13,3,Sunday
+09273001001345,Composite UPS Narayanpur,6,session18,2026-04-05,17:04:00,Mobile,25.31,No,14,4,Sunday
+09273001001086,Composite UPS Narayanpur,7,session11,2026-03-18,19:53:00,Mobile,4.15,No,11,3,Wednesday
+09273001001191,Composite UPS Narayanpur,7,session16,2026-03-23,19:09:00,Desktop,4.3,Yes,12,3,Monday
+09273001001357,Composite UPS Narayanpur,6,session1,2026-04-07,15:10:00,Desktop,4.67,Yes,14,4,Tuesday
+09273001002320,Composite UPS Mahrajganj,7,session9,2026-03-29,19:24:00,Mobile,12.1,No,13,3,Sunday
+09273002005072,Composite UPS Mudila,8,session11,2026-03-28,08:16:00,Desktop,15.6,Yes,12,3,Saturday
+09273001003141,UPS Sanjhai,7,session6,2026-04-07,20:40:00,Desktop,25.05,Yes,14,4,Tuesday
+09273001002173,Composite UPS Mahrajganj,8,session15,2026-03-31,15:18:00,Desktop,14.49,No,13,3,Tuesday
+09273001002182,Composite UPS Mahrajganj,6,session8,2026-04-06,21:53:00,Mobile,45.79,Yes,14,4,Monday
+09273001002074,Composite UPS Mahrajganj,7,session17,2026-03-18,17:34:00,Desktop,36.98,Yes,11,3,Wednesday
+09273002005058,Composite UPS Mudila,7,session11,2026-04-01,14:17:00,Desktop,38.09,No,13,4,Wednesday
+09273001001108,Composite UPS Narayanpur,7,session11,2026-03-31,13:29:00,Mobile,44.63,No,13,3,Tuesday
+09273001001227,Composite UPS Narayanpur,7,session6,2026-03-21,08:01:00,Desktop,41.48,No,11,3,Saturday
+09273001003091,UPS Sanjhai,6,session1,2026-03-31,18:23:00,Mobile,48.71,No,13,3,Tuesday
+09273002004315,Composite UPS Fulwariya,7,session16,2026-03-27,08:08:00,Desktop,3.21,Yes,12,3,Friday
+09273001003305,UPS Sanjhai,8,session20,2026-04-11,12:01:00,Desktop,43.87,No,14,4,Saturday
+09273001002156,Composite UPS Mahrajganj,8,session6,2026-03-09,10:08:00,Desktop,35.67,Yes,10,3,Monday
+09273001002300,Composite UPS Mahrajganj,6,session14,2026-03-13,19:17:00,Mobile,20.98,Yes,10,3,Friday
+09273001002059,Composite UPS Mahrajganj,7,session18,2026-03-23,20:49:00,Desktop,11.48,No,12,3,Monday
+09273001002365,Composite UPS Mahrajganj,7,session12,2026-03-25,12:33:00,Desktop,31.79,No,12,3,Wednesday
+09273001001196,Composite UPS Narayanpur,6,session12,2026-03-11,10:52:00,Desktop,4.87,No,10,3,Wednesday
+09273001003377,UPS Sanjhai,7,session14,2026-03-14,16:36:00,Mobile,6.31,Yes,10,3,Saturday
+09273002005307,Composite UPS Mudila,7,session20,2026-04-01,16:52:00,Desktop,40.19,No,13,4,Wednesday
+09273001001039,Composite UPS Narayanpur,7,session13,2026-03-30,08:07:00,Desktop,14.42,No,13,3,Monday
+09273001001229,Composite UPS Narayanpur,7,session13,2026-04-03,14:12:00,Desktop,6.96,Yes,13,4,Friday
+09273002004301,Composite UPS Fulwariya,6,session20,2026-03-15,17:40:00,Desktop,46.7,Yes,11,3,Sunday
+09273002004142,Composite UPS Fulwariya,8,session1,2026-04-08,20:28:00,Mobile,12.94,No,14,4,Wednesday
+09273001002039,Composite UPS Mahrajganj,7,session10,2026-03-17,18:06:00,Desktop,28.7,Yes,11,3,Tuesday
+09273002004174,Composite UPS Fulwariya,7,session4,2026-03-16,12:29:00,Mobile,22.44,Yes,11,3,Monday
+09273001003241,UPS Sanjhai,7,session13,2026-03-12,16:05:00,Desktop,34.6,Yes,10,3,Thursday
+09273001002175,Composite UPS Mahrajganj,7,session1,2026-03-31,19:58:00,Desktop,49.04,Yes,13,3,Tuesday
+09273002005046,Composite UPS Mudila,7,session5,2026-03-23,08:29:00,Mobile,32.99,No,12,3,Monday
+09273002005055,Composite UPS Mudila,8,session15,2026-04-04,15:38:00,Mobile,33.92,Yes,13,4,Saturday
+09273002005227,Composite UPS Mudila,6,session9,2026-03-27,17:23:00,Desktop,14.51,No,12,3,Friday
+09273001002148,Composite UPS Mahrajganj,7,session1,2026-04-09,18:16:00,Mobile,24.13,Yes,14,4,Thursday
+09273002004272,Composite UPS Fulwariya,8,session5,2026-03-13,10:30:00,Mobile,4.0,Yes,10,3,Friday
+09273001003085,UPS Sanjhai,6,session18,2026-03-12,14:40:00,Mobile,17.32,Yes,10,3,Thursday
+09273002004205,Composite UPS Fulwariya,8,session4,2026-03-10,17:52:00,Mobile,28.84,No,10,3,Tuesday
+09273002004098,Composite UPS Fulwariya,6,session9,2026-03-23,14:31:00,Mobile,3.75,No,12,3,Monday
+09273001003323,UPS Sanjhai,8,session12,2026-03-26,12:19:00,Mobile,24.93,No,12,3,Thursday
+09273001002332,Composite UPS Mahrajganj,7,session19,2026-04-05,18:37:00,Mobile,48.6,Yes,14,4,Sunday
+09273001002226,Composite UPS Mahrajganj,6,session12,2026-03-20,11:47:00,Mobile,5.62,Yes,11,3,Friday
+09273001001235,Composite UPS Narayanpur,8,session5,2026-04-09,21:17:00,Desktop,25.12,Yes,14,4,Thursday
+09273002004196,Composite UPS Fulwariya,6,session20,2026-04-06,14:57:00,Mobile,4.76,Yes,14,4,Monday
+09273001003130,UPS Sanjhai,7,session1,2026-04-03,08:08:00,Desktop,18.58,Yes,13,4,Friday
+09273002004379,Composite UPS Fulwariya,7,session6,2026-03-12,19:04:00,Mobile,44.0,Yes,10,3,Thursday
+09273002004293,Composite UPS Fulwariya,7,session4,2026-03-10,15:10:00,Mobile,12.92,No,10,3,Tuesday
+09273001002116,Composite UPS Mahrajganj,6,session9,2026-03-15,16:06:00,Desktop,32.34,Yes,11,3,Sunday
+09273002004021,Composite UPS Fulwariya,7,session11,2026-03-14,11:15:00,Mobile,39.76,No,10,3,Saturday
+09273001003223,UPS Sanjhai,8,session20,2026-04-06,12:02:00,Mobile,14.22,No,14,4,Monday
+09273001001093,Composite UPS Narayanpur,8,session4,2026-04-03,18:27:00,Desktop,29.87,Yes,13,4,Friday
+09273001002328,Composite UPS Mahrajganj,7,session7,2026-04-07,15:37:00,Mobile,47.25,Yes,14,4,Tuesday
+09273001001068,Composite UPS Narayanpur,8,session7,2026-03-31,14:06:00,Mobile,35.97,Yes,13,3,Tuesday
+09273002005224,Composite UPS Mudila,8,session6,2026-04-11,17:16:00,Desktop,4.56,Yes,14,4,Saturday
+09273001001324,Composite UPS Narayanpur,6,session1,2026-03-21,09:33:00,Mobile,36.43,Yes,11,3,Saturday
+09273002005343,Composite UPS Mudila,8,session14,2026-03-21,19:32:00,Mobile,27.92,No,11,3,Saturday
+09273002004036,Composite UPS Fulwariya,8,session20,2026-03-11,21:38:00,Mobile,7.63,No,10,3,Wednesday
+09273001001181,Composite UPS Narayanpur,7,session14,2026-04-13,09:54:00,Desktop,36.34,Yes,15,4,Monday
+09273002004393,Composite UPS Fulwariya,7,session14,2026-04-09,08:28:00,Mobile,43.73,Yes,14,4,Thursday
+09273001003014,UPS Sanjhai,8,session15,2026-04-12,13:28:00,Mobile,38.33,Yes,15,4,Sunday
+09273001002263,Composite UPS Mahrajganj,7,session17,2026-03-24,12:17:00,Desktop,24.55,Yes,12,3,Tuesday
+09273002005283,Composite UPS Mudila,8,session7,2026-04-05,14:57:00,Desktop,34.74,Yes,14,4,Sunday
+09273001001326,Composite UPS Narayanpur,8,session18,2026-03-23,20:31:00,Desktop,28.36,No,12,3,Monday
+09273001002142,Composite UPS Mahrajganj,8,session16,2026-03-11,16:56:00,Desktop,6.86,No,10,3,Wednesday
+09273001003009,UPS Sanjhai,8,session18,2026-03-29,16:59:00,Desktop,6.4,Yes,13,3,Sunday
+09273001001309,Composite UPS Narayanpur,6,session16,2026-03-11,10:57:00,Mobile,33.16,No,10,3,Wednesday
+09273001002196,Composite UPS Mahrajganj,8,session15,2026-04-11,20:52:00,Desktop,9.91,Yes,14,4,Saturday
+09273001002130,Composite UPS Mahrajganj,7,session15,2026-03-17,12:42:00,Desktop,32.37,No,11,3,Tuesday
+09273002005208,Composite UPS Mudila,7,session11,2026-04-11,11:01:00,Mobile,7.04,Yes,14,4,Saturday
+09273002004292,Composite UPS Fulwariya,8,session16,2026-03-16,17:08:00,Desktop,43.77,No,11,3,Monday
+09273002005266,Composite UPS Mudila,6,session2,2026-03-18,10:38:00,Desktop,49.04,Yes,11,3,Wednesday
+09273002005154,Composite UPS Mudila,8,session20,2026-04-02,21:02:00,Desktop,4.02,No,13,4,Thursday
+09273001002385,Composite UPS Mahrajganj,6,session4,2026-03-18,15:50:00,Desktop,8.85,Yes,11,3,Wednesday
+09273002004251,Composite UPS Fulwariya,7,session6,2026-03-09,15:26:00,Mobile,39.99,No,10,3,Monday
+09273001003033,UPS Sanjhai,6,session1,2026-03-10,19:54:00,Mobile,31.36,No,10,3,Tuesday
+09273001002394,Composite UPS Mahrajganj,6,session8,2026-04-10,10:07:00,Desktop,43.04,No,14,4,Friday
+09273001002252,Composite UPS Mahrajganj,8,session6,2026-04-08,16:31:00,Mobile,45.49,No,14,4,Wednesday
+09273001001147,Composite UPS Narayanpur,7,session9,2026-04-02,11:28:00,Mobile,8.25,Yes,13,4,Thursday
+09273001001029,Composite UPS Narayanpur,8,session20,2026-03-22,21:11:00,Mobile,28.45,Yes,12,3,Sunday
+09273001001343,Composite UPS Narayanpur,8,session19,2026-03-29,14:33:00,Mobile,42.16,Yes,13,3,Sunday
+09273002004078,Composite UPS Fulwariya,8,session1,2026-03-25,16:15:00,Desktop,13.95,Yes,12,3,Wednesday
+09273002005213,Composite UPS Mudila,7,session14,2026-03-09,19:04:00,Desktop,40.48,No,10,3,Monday
+09273001003399,UPS Sanjhai,8,session13,2026-04-11,17:42:00,Mobile,22.54,No,14,4,Saturday
+09273002005154,Composite UPS Mudila,8,session7,2026-04-06,20:44:00,Desktop,29.86,Yes,14,4,Monday
+09273001002370,Composite UPS Mahrajganj,8,session7,2026-03-21,12:15:00,Mobile,4.38,No,11,3,Saturday
+09273002005056,Composite UPS Mudila,7,session3,2026-03-17,19:46:00,Mobile,49.02,No,11,3,Tuesday
+09273001002192,Composite UPS Mahrajganj,8,session7,2026-04-03,13:13:00,Desktop,45.65,Yes,13,4,Friday
+09273001003305,UPS Sanjhai,8,session6,2026-03-20,19:46:00,Desktop,31.25,Yes,11,3,Friday
+09273001002260,Composite UPS Mahrajganj,7,session15,2026-04-07,15:37:00,Desktop,32.53,Yes,14,4,Tuesday
+09273002004270,Composite UPS Fulwariya,7,session6,2026-04-03,18:37:00,Desktop,36.26,No,13,4,Friday
+09273001003228,UPS Sanjhai,8,session13,2026-03-10,17:33:00,Desktop,29.52,Yes,10,3,Tuesday
+09273002005345,Composite UPS Mudila,6,session1,2026-03-13,11:34:00,Desktop,48.32,No,10,3,Friday
+09273002004258,Composite UPS Fulwariya,6,session12,2026-03-15,10:49:00,Mobile,20.92,No,11,3,Sunday
+09273001001101,Composite UPS Narayanpur,6,session18,2026-03-21,18:56:00,Desktop,43.78,Yes,11,3,Saturday
+09273002004251,Composite UPS Fulwariya,6,session13,2026-03-31,18:13:00,Desktop,7.02,Yes,13,3,Tuesday
+09273002005128,Composite UPS Mudila,6,session17,2026-03-30,11:39:00,Mobile,12.89,Yes,13,3,Monday
+09273002004034,Composite UPS Fulwariya,6,session8,2026-03-19,16:51:00,Desktop,26.34,Yes,11,3,Thursday
+09273001002096,Composite UPS Mahrajganj,8,session18,2026-04-09,21:18:00,Mobile,13.67,Yes,14,4,Thursday
+09273001002377,Composite UPS Mahrajganj,7,session13,2026-04-10,11:19:00,Mobile,40.42,No,14,4,Friday
+09273001002066,Composite UPS Mahrajganj,6,session17,2026-03-10,17:15:00,Desktop,49.09,No,10,3,Tuesday
+09273001002030,Composite UPS Mahrajganj,7,session8,2026-04-11,12:44:00,Desktop,39.99,Yes,14,4,Saturday
+09273002005374,Composite UPS Mudila,8,session14,2026-03-29,14:31:00,Mobile,47.28,Yes,13,3,Sunday
+09273001003214,UPS Sanjhai,8,session1,2026-04-02,09:33:00,Mobile,49.68,Yes,13,4,Thursday
+09273001001150,Composite UPS Narayanpur,6,session6,2026-04-13,21:38:00,Desktop,11.66,No,15,4,Monday
+09273002005086,Composite UPS Mudila,8,session4,2026-03-31,13:25:00,Mobile,38.13,Yes,13,3,Tuesday
+09273002004196,Composite UPS Fulwariya,8,session14,2026-03-22,12:10:00,Desktop,44.34,Yes,12,3,Sunday
+09273002004342,Composite UPS Fulwariya,8,session13,2026-04-03,09:11:00,Desktop,39.84,Yes,13,4,Friday
+09273002004391,Composite UPS Fulwariya,6,session19,2026-03-24,09:14:00,Desktop,43.49,No,12,3,Tuesday
+09273002004148,Composite UPS Fulwariya,6,session9,2026-03-25,18:09:00,Mobile,5.55,Yes,12,3,Wednesday
+09273001003075,UPS Sanjhai,6,session10,2026-03-10,12:57:00,Mobile,18.05,No,10,3,Tuesday
+09273001003192,UPS Sanjhai,7,session10,2026-03-14,12:05:00,Desktop,48.33,No,10,3,Saturday
+09273001003235,UPS Sanjhai,7,session2,2026-03-18,21:23:00,Desktop,44.01,Yes,11,3,Wednesday
+09273002004393,Composite UPS Fulwariya,7,session15,2026-03-24,21:19:00,Mobile,19.92,Yes,12,3,Tuesday
+09273002004138,Composite UPS Fulwariya,6,session12,2026-04-06,08:46:00,Mobile,31.83,No,14,4,Monday
+09273002004284,Composite UPS Fulwariya,6,session9,2026-04-09,14:27:00,Desktop,16.08,Yes,14,4,Thursday
+09273002004312,Composite UPS Fulwariya,8,session14,2026-03-19,18:59:00,Mobile,47.66,Yes,11,3,Thursday
+09273001002109,Composite UPS Mahrajganj,8,session11,2026-04-11,14:06:00,Desktop,45.61,No,14,4,Saturday
+09273001003017,UPS Sanjhai,7,session2,2026-03-24,16:49:00,Desktop,27.69,Yes,12,3,Tuesday
+09273001001265,Composite UPS Narayanpur,7,session3,2026-03-14,20:07:00,Desktop,43.16,Yes,10,3,Saturday
+09273002004243,Composite UPS Fulwariya,8,session1,2026-03-10,13:20:00,Mobile,26.9,Yes,10,3,Tuesday
+09273001003233,UPS Sanjhai,7,session4,2026-03-30,12:07:00,Mobile,30.62,No,13,3,Monday
+09273002004279,Composite UPS Fulwariya,7,session19,2026-03-10,12:51:00,Desktop,24.98,Yes,10,3,Tuesday
+09273001003399,UPS Sanjhai,6,session1,2026-03-26,12:40:00,Desktop,19.85,No,12,3,Thursday
+09273001002338,Composite UPS Mahrajganj,8,session4,2026-04-04,10:04:00,Mobile,40.56,No,13,4,Saturday
+09273001001026,Composite UPS Narayanpur,6,session10,2026-04-05,19:38:00,Desktop,7.1,Yes,14,4,Sunday
+09273002005086,Composite UPS Mudila,7,session12,2026-03-21,20:20:00,Mobile,27.41,No,11,3,Saturday
+09273001002322,Composite UPS Mahrajganj,7,session14,2026-04-09,09:02:00,Desktop,18.31,Yes,14,4,Thursday
+09273001001291,Composite UPS Narayanpur,8,session9,2026-04-13,16:51:00,Desktop,41.83,No,15,4,Monday
+09273001003015,UPS Sanjhai,8,session3,2026-03-15,20:48:00,Desktop,13.7,Yes,11,3,Sunday
+09273002004329,Composite UPS Fulwariya,6,session4,2026-03-23,10:39:00,Desktop,39.09,Yes,12,3,Monday
+09273001003005,UPS Sanjhai,8,session14,2026-04-01,13:56:00,Desktop,4.76,No,13,4,Wednesday
+09273001001141,Composite UPS Narayanpur,7,session14,2026-03-31,18:16:00,Mobile,28.69,Yes,13,3,Tuesday
+09273001002393,Composite UPS Mahrajganj,7,session15,2026-04-10,13:00:00,Desktop,33.47,Yes,14,4,Friday
+09273002004085,Composite UPS Fulwariya,8,session6,2026-04-05,10:11:00,Mobile,17.26,No,14,4,Sunday
+09273001003310,UPS Sanjhai,8,session2,2026-03-11,20:14:00,Desktop,4.54,Yes,10,3,Wednesday
+09273002004035,Composite UPS Fulwariya,6,session10,2026-03-24,08:36:00,Mobile,47.74,Yes,12,3,Tuesday
+09273002005329,Composite UPS Mudila,8,session4,2026-03-23,10:59:00,Mobile,21.17,Yes,12,3,Monday
+09273001003087,UPS Sanjhai,7,session19,2026-04-11,16:43:00,Desktop,34.79,No,14,4,Saturday
+09273001003373,UPS Sanjhai,6,session6,2026-03-31,20:17:00,Mobile,41.67,No,13,3,Tuesday
+09273001002240,Composite UPS Mahrajganj,6,session8,2026-04-04,09:21:00,Mobile,35.22,No,13,4,Saturday
+09273002004219,Composite UPS Fulwariya,6,session14,2026-03-11,13:33:00,Mobile,13.46,No,10,3,Wednesday
+09273001003218,UPS Sanjhai,8,session19,2026-04-02,17:21:00,Desktop,29.15,Yes,13,4,Thursday
+09273001002097,Composite UPS Mahrajganj,7,session13,2026-03-15,21:38:00,Mobile,29.51,No,11,3,Sunday
+09273001001216,Composite UPS Narayanpur,7,session5,2026-04-08,10:54:00,Desktop,24.76,No,14,4,Wednesday
+09273002004259,Composite UPS Fulwariya,7,session8,2026-03-23,16:19:00,Desktop,4.28,No,12,3,Monday
+09273001002161,Composite UPS Mahrajganj,7,session10,2026-03-24,13:58:00,Desktop,38.87,No,12,3,Tuesday
+09273001001346,Composite UPS Narayanpur,6,session6,2026-03-11,10:34:00,Desktop,45.92,Yes,10,3,Wednesday
+09273001003047,UPS Sanjhai,7,session7,2026-04-11,09:02:00,Mobile,36.44,No,14,4,Saturday
+09273002004080,Composite UPS Fulwariya,8,session20,2026-03-09,16:07:00,Mobile,39.08,No,10,3,Monday
+09273001003333,UPS Sanjhai,8,session20,2026-03-20,14:13:00,Desktop,47.49,Yes,11,3,Friday
+09273002004358,Composite UPS Fulwariya,7,session17,2026-04-05,13:47:00,Desktop,3.78,Yes,14,4,Sunday
+09273002005069,Composite UPS Mudila,8,session15,2026-04-01,11:58:00,Mobile,39.52,No,13,4,Wednesday
+09273001003153,UPS Sanjhai,8,session19,2026-03-27,14:43:00,Desktop,49.84,No,12,3,Friday
+09273002004335,Composite UPS Fulwariya,6,session11,2026-03-09,14:10:00,Mobile,22.88,No,10,3,Monday
+09273001001236,Composite UPS Narayanpur,7,session4,2026-03-22,12:06:00,Mobile,37.89,No,12,3,Sunday
+09273001001308,Composite UPS Narayanpur,7,session9,2026-04-04,15:23:00,Mobile,6.72,Yes,13,4,Saturday
+09273001001062,Composite UPS Narayanpur,8,session6,2026-04-04,11:12:00,Mobile,34.14,No,13,4,Saturday
+09273001002207,Composite UPS Mahrajganj,8,session6,2026-03-16,21:45:00,Mobile,49.9,No,11,3,Monday
+09273001002092,Composite UPS Mahrajganj,6,session16,2026-03-15,21:24:00,Desktop,2.85,No,11,3,Sunday
+09273002005099,Composite UPS Mudila,6,session20,2026-03-13,20:06:00,Mobile,30.14,Yes,10,3,Friday
+09273001002201,Composite UPS Mahrajganj,6,session2,2026-03-23,15:54:00,Desktop,3.32,Yes,12,3,Monday
+09273002005059,Composite UPS Mudila,6,session18,2026-03-14,15:10:00,Mobile,22.15,No,10,3,Saturday
+09273001003092,UPS Sanjhai,7,session15,2026-03-25,12:03:00,Desktop,48.58,Yes,12,3,Wednesday
+09273002005044,Composite UPS Mudila,8,session14,2026-04-10,15:06:00,Mobile,34.79,Yes,14,4,Friday
+09273001003170,UPS Sanjhai,8,session14,2026-03-11,21:25:00,Desktop,12.77,Yes,10,3,Wednesday
+09273001002069,Composite UPS Mahrajganj,6,session20,2026-04-06,20:51:00,Desktop,5.78,No,14,4,Monday
+09273002004268,Composite UPS Fulwariya,7,session15,2026-04-01,08:22:00,Desktop,28.99,No,13,4,Wednesday
+09273001001051,Composite UPS Narayanpur,7,session20,2026-03-20,11:49:00,Desktop,44.81,No,11,3,Friday
+09273001002114,Composite UPS Mahrajganj,7,session11,2026-04-03,15:19:00,Mobile,14.23,Yes,13,4,Friday
+09273001003369,UPS Sanjhai,8,session1,2026-04-11,09:43:00,Mobile,29.3,No,14,4,Saturday
+09273002004324,Composite UPS Fulwariya,8,session9,2026-03-09,18:18:00,Desktop,49.19,No,10,3,Monday
+09273001001172,Composite UPS Narayanpur,7,session17,2026-03-28,21:58:00,Mobile,25.09,No,12,3,Saturday
+09273001003090,UPS Sanjhai,6,session3,2026-03-14,15:26:00,Mobile,31.8,No,10,3,Saturday
+09273002005172,Composite UPS Mudila,6,session14,2026-04-02,17:57:00,Mobile,10.89,Yes,13,4,Thursday
+09273001002307,Composite UPS Mahrajganj,6,session3,2026-03-13,18:13:00,Mobile,18.51,Yes,10,3,Friday
+09273001002073,Composite UPS Mahrajganj,8,session13,2026-04-12,17:28:00,Mobile,3.21,No,15,4,Sunday
+09273001003050,UPS Sanjhai,6,session16,2026-03-29,13:15:00,Mobile,43.32,No,13,3,Sunday
+09273001002361,Composite UPS Mahrajganj,6,session19,2026-04-03,19:01:00,Desktop,3.45,Yes,13,4,Friday
+09273001001391,Composite UPS Narayanpur,7,session6,2026-04-05,09:31:00,Desktop,24.46,Yes,14,4,Sunday
+09273001002388,Composite UPS Mahrajganj,6,session12,2026-03-13,08:38:00,Mobile,7.02,No,10,3,Friday
+09273001002026,Composite UPS Mahrajganj,8,session19,2026-03-16,19:34:00,Mobile,9.6,Yes,11,3,Monday
+09273002004210,Composite UPS Fulwariya,8,session15,2026-03-23,13:22:00,Mobile,18.57,Yes,12,3,Monday
+09273002005054,Composite UPS Mudila,8,session6,2026-03-17,20:33:00,Mobile,22.08,No,11,3,Tuesday
+09273002004349,Composite UPS Fulwariya,7,session20,2026-04-09,20:40:00,Desktop,26.19,Yes,14,4,Thursday
+09273002005103,Composite UPS Mudila,8,session2,2026-03-16,08:45:00,Mobile,42.45,No,11,3,Monday
+09273001003184,UPS Sanjhai,6,session4,2026-03-10,20:40:00,Desktop,11.46,No,10,3,Tuesday
+09273002005251,Composite UPS Mudila,8,session11,2026-03-27,09:49:00,Desktop,14.07,No,12,3,Friday
+09273001002214,Composite UPS Mahrajganj,7,session1,2026-03-24,21:42:00,Mobile,10.38,Yes,12,3,Tuesday
+09273001002385,Composite UPS Mahrajganj,6,session3,2026-03-23,12:52:00,Mobile,22.33,Yes,12,3,Monday
+09273002005255,Composite UPS Mudila,8,session6,2026-03-27,20:47:00,Mobile,43.11,Yes,12,3,Friday
+09273001003171,UPS Sanjhai,8,session10,2026-03-23,10:15:00,Mobile,7.96,Yes,12,3,Monday
+09273002004295,Composite UPS Fulwariya,6,session9,2026-03-13,14:50:00,Desktop,38.42,No,10,3,Friday
+09273001001009,Composite UPS Narayanpur,8,session1,2026-04-07,11:18:00,Mobile,3.75,No,14,4,Tuesday
+09273002005172,Composite UPS Mudila,7,session4,2026-03-24,13:49:00,Mobile,21.25,Yes,12,3,Tuesday
+09273001001142,Composite UPS Narayanpur,8,session10,2026-04-02,16:07:00,Mobile,31.32,Yes,13,4,Thursday
+09273001002334,Composite UPS Mahrajganj,8,session19,2026-03-16,20:45:00,Desktop,25.96,Yes,11,3,Monday
+09273001001169,Composite UPS Narayanpur,7,session11,2026-03-20,19:19:00,Mobile,33.42,Yes,11,3,Friday
+09273001002039,Composite UPS Mahrajganj,8,session9,2026-03-20,16:06:00,Mobile,13.82,No,11,3,Friday
+09273001003391,UPS Sanjhai,8,session9,2026-03-31,17:37:00,Mobile,27.47,Yes,13,3,Tuesday
+09273001002102,Composite UPS Mahrajganj,8,session15,2026-03-10,14:39:00,Desktop,15.95,No,10,3,Tuesday
+09273002005228,Composite UPS Mudila,8,session18,2026-03-12,15:34:00,Desktop,25.38,No,10,3,Thursday
+09273001001135,Composite UPS Narayanpur,6,session15,2026-04-11,09:40:00,Mobile,31.81,No,14,4,Saturday
+09273001003017,UPS Sanjhai,7,session8,2026-03-20,19:29:00,Mobile,34.96,Yes,11,3,Friday
+09273001003072,UPS Sanjhai,8,session18,2026-03-13,19:19:00,Mobile,25.94,Yes,10,3,Friday
+09273001002332,Composite UPS Mahrajganj,7,session10,2026-03-09,19:21:00,Mobile,32.89,No,10,3,Monday
+09273001003012,UPS Sanjhai,6,session4,2026-04-13,17:30:00,Desktop,35.47,Yes,15,4,Monday
+09273001002182,Composite UPS Mahrajganj,7,session5,2026-03-25,14:10:00,Desktop,28.88,No,12,3,Wednesday
+09273002004048,Composite UPS Fulwariya,8,session12,2026-03-12,14:05:00,Mobile,35.91,Yes,10,3,Thursday
+09273001001024,Composite UPS Narayanpur,8,session3,2026-03-24,18:34:00,Mobile,10.03,No,12,3,Tuesday
+09273001003041,UPS Sanjhai,7,session6,2026-03-21,13:00:00,Mobile,20.53,No,11,3,Saturday
+09273001003382,UPS Sanjhai,7,session18,2026-03-26,13:51:00,Mobile,19.07,Yes,12,3,Thursday
+09273002005253,Composite UPS Mudila,6,session6,2026-04-08,19:33:00,Mobile,23.0,Yes,14,4,Wednesday
+09273001001384,Composite UPS Narayanpur,8,session8,2026-03-28,17:30:00,Desktop,34.75,Yes,12,3,Saturday
+09273002004390,Composite UPS Fulwariya,8,session3,2026-04-09,10:04:00,Mobile,10.19,Yes,14,4,Thursday
+09273002005348,Composite UPS Mudila,7,session7,2026-03-15,09:57:00,Mobile,43.82,No,11,3,Sunday
+09273002004170,Composite UPS Fulwariya,6,session13,2026-03-17,17:37:00,Desktop,4.7,No,11,3,Tuesday
+09273001002152,Composite UPS Mahrajganj,8,session9,2026-03-29,12:05:00,Mobile,32.43,No,13,3,Sunday
+09273001003047,UPS Sanjhai,7,session1,2026-03-09,13:59:00,Mobile,8.19,No,10,3,Monday
+09273001003242,UPS Sanjhai,7,session16,2026-03-09,15:39:00,Mobile,15.51,Yes,10,3,Monday
+09273002004013,Composite UPS Fulwariya,6,session5,2026-04-01,09:18:00,Desktop,23.64,No,13,4,Wednesday
+09273001003398,UPS Sanjhai,8,session2,2026-04-06,11:11:00,Desktop,41.09,Yes,14,4,Monday
+09273002004043,Composite UPS Fulwariya,8,session12,2026-03-16,12:24:00,Mobile,26.09,No,11,3,Monday
+09273001001280,Composite UPS Narayanpur,8,session18,2026-04-06,09:08:00,Mobile,38.0,Yes,14,4,Monday
+09273001001125,Composite UPS Narayanpur,7,session16,2026-03-25,11:47:00,Mobile,32.87,Yes,12,3,Wednesday
+09273002005184,Composite UPS Mudila,6,session10,2026-04-03,11:23:00,Mobile,8.19,No,13,4,Friday
+09273002005022,Composite UPS Mudila,6,session10,2026-03-31,08:42:00,Mobile,17.24,Yes,13,3,Tuesday
+09273001003098,UPS Sanjhai,6,session10,2026-04-01,20:51:00,Mobile,47.57,Yes,13,4,Wednesday
+09273001001045,Composite UPS Narayanpur,7,session16,2026-03-10,12:41:00,Mobile,20.13,Yes,10,3,Tuesday
+09273001003030,UPS Sanjhai,7,session4,2026-03-14,17:29:00,Desktop,46.37,No,10,3,Saturday
+09273002005370,Composite UPS Mudila,7,session4,2026-03-17,12:34:00,Mobile,36.97,Yes,11,3,Tuesday
+09273001001280,Composite UPS Narayanpur,6,session13,2026-03-22,18:50:00,Mobile,7.39,No,12,3,Sunday
+09273001002339,Composite UPS Mahrajganj,7,session1,2026-04-03,19:07:00,Mobile,44.49,Yes,13,4,Friday
+09273001003382,UPS Sanjhai,7,session9,2026-03-27,14:44:00,Desktop,31.83,No,12,3,Friday
+09273001002234,Composite UPS Mahrajganj,8,session1,2026-03-10,20:49:00,Desktop,38.46,Yes,10,3,Tuesday
+09273002005305,Composite UPS Mudila,8,session12,2026-03-29,13:46:00,Desktop,39.53,No,13,3,Sunday
+09273002004396,Composite UPS Fulwariya,7,session17,2026-03-26,21:48:00,Mobile,17.44,No,12,3,Thursday
+09273001002019,Composite UPS Mahrajganj,6,session13,2026-04-10,11:38:00,Mobile,42.0,No,14,4,Friday
+09273001003301,UPS Sanjhai,8,session10,2026-03-19,16:21:00,Mobile,19.14,No,11,3,Thursday
+09273001002027,Composite UPS Mahrajganj,6,session10,2026-03-25,14:45:00,Mobile,18.26,No,12,3,Wednesday
+09273001003287,UPS Sanjhai,7,session19,2026-04-09,20:20:00,Mobile,39.98,Yes,14,4,Thursday
+09273001001238,Composite UPS Narayanpur,8,session8,2026-04-04,12:07:00,Mobile,28.6,No,13,4,Saturday
+09273001003385,UPS Sanjhai,7,session8,2026-03-20,19:26:00,Desktop,39.4,No,11,3,Friday
+09273001001167,Composite UPS Narayanpur,8,session9,2026-03-28,08:58:00,Mobile,33.53,No,12,3,Saturday
+09273001003172,UPS Sanjhai,7,session17,2026-04-10,20:07:00,Desktop,26.89,No,14,4,Friday
+09273001001150,Composite UPS Narayanpur,7,session4,2026-04-09,15:26:00,Desktop,44.69,Yes,14,4,Thursday
+09273001002285,Composite UPS Mahrajganj,6,session14,2026-04-07,17:23:00,Desktop,2.13,No,14,4,Tuesday
+09273001001171,Composite UPS Narayanpur,8,session12,2026-04-05,17:39:00,Mobile,10.85,No,14,4,Sunday
+09273001002346,Composite UPS Mahrajganj,6,session10,2026-04-09,21:39:00,Mobile,34.95,Yes,14,4,Thursday
+09273002005052,Composite UPS Mudila,7,session3,2026-04-12,13:41:00,Mobile,43.33,No,15,4,Sunday
+09273002005258,Composite UPS Mudila,7,session10,2026-03-26,17:51:00,Mobile,18.31,No,12,3,Thursday
+09273002005325,Composite UPS Mudila,7,session15,2026-03-29,16:17:00,Mobile,43.23,Yes,13,3,Sunday
+09273002004151,Composite UPS Fulwariya,7,session11,2026-03-18,12:09:00,Desktop,23.66,No,11,3,Wednesday
+09273002004202,Composite UPS Fulwariya,7,session1,2026-03-15,18:14:00,Mobile,30.13,Yes,11,3,Sunday
+09273002005213,Composite UPS Mudila,8,session5,2026-03-29,19:55:00,Mobile,8.34,No,13,3,Sunday
+09273002005097,Composite UPS Mudila,8,session17,2026-03-23,20:52:00,Desktop,28.49,No,12,3,Monday
+09273001001360,Composite UPS Narayanpur,8,session7,2026-03-26,16:06:00,Mobile,3.81,Yes,12,3,Thursday
+09273002004226,Composite UPS Fulwariya,7,session1,2026-03-17,14:30:00,Mobile,49.19,No,11,3,Tuesday
+09273001003265,UPS Sanjhai,8,session19,2026-03-30,12:07:00,Mobile,40.25,Yes,13,3,Monday
+09273001001299,Composite UPS Narayanpur,8,session1,2026-03-16,08:53:00,Mobile,32.19,Yes,11,3,Monday
+09273001002047,Composite UPS Mahrajganj,8,session4,2026-03-11,17:08:00,Desktop,47.07,No,10,3,Wednesday
+09273001003248,UPS Sanjhai,7,session2,2026-03-18,12:03:00,Desktop,40.82,No,11,3,Wednesday
+09273001002319,Composite UPS Mahrajganj,7,session17,2026-04-01,09:46:00,Mobile,20.35,No,13,4,Wednesday
+09273002005123,Composite UPS Mudila,6,session6,2026-04-13,18:08:00,Desktop,23.52,Yes,15,4,Monday
+09273001001002,Composite UPS Narayanpur,8,session7,2026-04-03,19:29:00,Mobile,48.37,No,13,4,Friday
+09273002005369,Composite UPS Mudila,7,session7,2026-03-10,19:25:00,Desktop,12.09,Yes,10,3,Tuesday
+09273002004075,Composite UPS Fulwariya,7,session16,2026-03-27,18:09:00,Mobile,22.46,No,12,3,Friday
+09273001003218,UPS Sanjhai,7,session18,2026-04-05,11:36:00,Desktop,24.08,Yes,14,4,Sunday
+09273001002373,Composite UPS Mahrajganj,8,session20,2026-03-23,18:55:00,Desktop,30.9,Yes,12,3,Monday
+09273002004283,Composite UPS Fulwariya,7,session13,2026-03-26,11:03:00,Mobile,37.19,No,12,3,Thursday
+09273001002282,Composite UPS Mahrajganj,7,session1,2026-04-13,17:21:00,Desktop,14.37,Yes,15,4,Monday
+09273001001126,Composite UPS Narayanpur,7,session1,2026-03-28,20:19:00,Mobile,38.77,Yes,12,3,Saturday
+09273002005105,Composite UPS Mudila,6,session18,2026-03-18,13:07:00,Desktop,15.72,No,11,3,Wednesday
+09273001002127,Composite UPS Mahrajganj,8,session19,2026-03-17,16:48:00,Desktop,23.08,No,11,3,Tuesday
+09273001003231,UPS Sanjhai,8,session15,2026-04-05,17:24:00,Desktop,47.97,No,14,4,Sunday
+09273001003083,UPS Sanjhai,8,session8,2026-03-09,12:11:00,Desktop,2.56,Yes,10,3,Monday
+09273001003328,UPS Sanjhai,7,session2,2026-04-11,08:48:00,Desktop,11.14,No,14,4,Saturday
+09273002005152,Composite UPS Mudila,7,session4,2026-04-05,09:03:00,Mobile,20.12,No,14,4,Sunday
+09273002004226,Composite UPS Fulwariya,8,session14,2026-03-18,20:09:00,Mobile,7.17,No,11,3,Wednesday
+09273001003348,UPS Sanjhai,7,session3,2026-04-06,09:16:00,Desktop,36.79,No,14,4,Monday
+09273001002253,Composite UPS Mahrajganj,6,session12,2026-03-17,17:10:00,Mobile,8.83,No,11,3,Tuesday
+09273002005065,Composite UPS Mudila,8,session10,2026-03-21,19:16:00,Desktop,13.85,Yes,11,3,Saturday
+09273001002137,Composite UPS Mahrajganj,8,session9,2026-03-25,21:48:00,Desktop,9.12,Yes,12,3,Wednesday
+09273001002174,Composite UPS Mahrajganj,8,session13,2026-03-10,19:47:00,Mobile,9.14,No,10,3,Tuesday
+09273001001104,Composite UPS Narayanpur,8,session7,2026-04-13,13:12:00,Desktop,39.41,Yes,15,4,Monday
+09273001001382,Composite UPS Narayanpur,8,session6,2026-04-05,13:51:00,Mobile,38.1,Yes,14,4,Sunday
+09273002005316,Composite UPS Mudila,6,session2,2026-03-12,17:30:00,Mobile,42.4,No,10,3,Thursday
+09273001002089,Composite UPS Mahrajganj,6,session16,2026-04-02,13:05:00,Desktop,32.12,Yes,13,4,Thursday
+09273001003157,UPS Sanjhai,7,session16,2026-03-26,18:50:00,Desktop,17.1,Yes,12,3,Thursday
+09273002004193,Composite UPS Fulwariya,6,session3,2026-04-13,13:44:00,Mobile,25.29,No,15,4,Monday
+09273002004011,Composite UPS Fulwariya,6,session20,2026-03-13,12:50:00,Mobile,25.67,Yes,10,3,Friday
+09273002004132,Composite UPS Fulwariya,6,session17,2026-03-23,21:46:00,Desktop,40.61,No,12,3,Monday
+09273001002307,Composite UPS Mahrajganj,8,session3,2026-03-28,20:17:00,Desktop,41.76,Yes,12,3,Saturday
+09273001001031,Composite UPS Narayanpur,6,session15,2026-04-04,10:20:00,Mobile,32.5,No,13,4,Saturday
+09273001002374,Composite UPS Mahrajganj,8,session19,2026-03-22,15:15:00,Desktop,5.39,No,12,3,Sunday
+09273001003215,UPS Sanjhai,6,session20,2026-03-25,21:00:00,Mobile,5.73,No,12,3,Wednesday
+09273001001009,Composite UPS Narayanpur,7,session4,2026-03-13,11:57:00,Mobile,5.09,No,10,3,Friday
+09273001003359,UPS Sanjhai,7,session20,2026-04-05,21:58:00,Desktop,22.44,Yes,14,4,Sunday
+09273001001053,Composite UPS Narayanpur,8,session12,2026-04-04,16:53:00,Desktop,31.2,Yes,13,4,Saturday
+09273002005161,Composite UPS Mudila,6,session19,2026-03-22,17:08:00,Mobile,46.7,No,12,3,Sunday
+09273001002174,Composite UPS Mahrajganj,6,session19,2026-03-11,09:56:00,Desktop,21.58,No,10,3,Wednesday
+09273002004187,Composite UPS Fulwariya,6,session1,2026-04-01,15:30:00,Mobile,39.22,Yes,13,4,Wednesday
+09273002005271,Composite UPS Mudila,6,session10,2026-03-10,15:45:00,Desktop,17.42,Yes,10,3,Tuesday
+09273002005303,Composite UPS Mudila,8,session19,2026-04-10,16:41:00,Mobile,26.28,No,14,4,Friday
+09273002005326,Composite UPS Mudila,8,session9,2026-04-11,20:06:00,Desktop,43.71,No,14,4,Saturday
+09273002005200,Composite UPS Mudila,6,session13,2026-04-06,20:05:00,Desktop,15.92,Yes,14,4,Monday
+09273001001363,Composite UPS Narayanpur,6,session14,2026-03-25,08:38:00,Mobile,34.57,No,12,3,Wednesday
+09273002005320,Composite UPS Mudila,6,session13,2026-03-30,09:04:00,Desktop,36.58,No,13,3,Monday
+09273001002292,Composite UPS Mahrajganj,7,session10,2026-03-12,13:39:00,Desktop,47.65,No,10,3,Thursday
+09273002005083,Composite UPS Mudila,8,session8,2026-03-28,14:58:00,Mobile,42.2,No,12,3,Saturday
+09273001001333,Composite UPS Narayanpur,6,session20,2026-03-21,08:38:00,Mobile,49.49,Yes,11,3,Saturday
+09273001003294,UPS Sanjhai,8,session7,2026-03-26,13:41:00,Desktop,34.79,No,12,3,Thursday
+09273001003048,UPS Sanjhai,6,session5,2026-03-27,17:18:00,Mobile,9.67,Yes,12,3,Friday
+09273002004098,Composite UPS Fulwariya,7,session17,2026-04-05,09:59:00,Desktop,13.29,No,14,4,Sunday
+09273002004346,Composite UPS Fulwariya,7,session19,2026-03-25,17:04:00,Desktop,26.49,No,12,3,Wednesday
+09273002005325,Composite UPS Mudila,8,session15,2026-03-27,10:31:00,Mobile,47.3,No,12,3,Friday
+09273002004059,Composite UPS Fulwariya,7,session2,2026-04-11,16:17:00,Desktop,24.11,No,14,4,Saturday
+09273001003133,UPS Sanjhai,8,session10,2026-04-04,21:23:00,Desktop,47.91,Yes,13,4,Saturday
+09273002005308,Composite UPS Mudila,8,session16,2026-03-29,21:00:00,Desktop,44.31,No,13,3,Sunday
+09273001003380,UPS Sanjhai,6,session18,2026-03-15,17:20:00,Mobile,16.8,No,11,3,Sunday
+09273001003127,UPS Sanjhai,6,session11,2026-03-28,11:03:00,Desktop,38.74,Yes,12,3,Saturday
+09273001001388,Composite UPS Narayanpur,7,session1,2026-03-09,11:16:00,Mobile,4.99,No,10,3,Monday
+09273001002323,Composite UPS Mahrajganj,8,session13,2026-03-23,14:23:00,Mobile,46.07,No,12,3,Monday
+09273001003331,UPS Sanjhai,7,session19,2026-03-11,14:07:00,Mobile,3.72,Yes,10,3,Wednesday
+09273001003173,UPS Sanjhai,6,session3,2026-03-20,17:53:00,Desktop,4.81,Yes,11,3,Friday
+09273002005023,Composite UPS Mudila,7,session20,2026-03-09,19:35:00,Desktop,6.37,No,10,3,Monday
+09273001002163,Composite UPS Mahrajganj,7,session14,2026-04-12,14:47:00,Mobile,18.37,Yes,15,4,Sunday
+09273001001188,Composite UPS Narayanpur,6,session16,2026-03-30,15:43:00,Mobile,7.28,No,13,3,Monday
+09273001001117,Composite UPS Narayanpur,8,session9,2026-03-24,13:14:00,Mobile,29.53,No,12,3,Tuesday
+09273002004031,Composite UPS Fulwariya,6,session5,2026-03-11,09:55:00,Desktop,36.52,Yes,10,3,Wednesday
+09273001001253,Composite UPS Narayanpur,7,session10,2026-03-21,11:00:00,Desktop,31.87,No,11,3,Saturday
+09273001003076,UPS Sanjhai,6,session9,2026-03-10,12:31:00,Desktop,22.42,No,10,3,Tuesday
+09273001001190,Composite UPS Narayanpur,6,session6,2026-03-14,19:26:00,Mobile,42.82,No,10,3,Saturday
+09273001002321,Composite UPS Mahrajganj,7,session1,2026-04-13,18:14:00,Desktop,14.66,Yes,15,4,Monday
+09273001002121,Composite UPS Mahrajganj,6,session7,2026-04-02,11:07:00,Mobile,15.24,Yes,13,4,Thursday
+09273002005113,Composite UPS Mudila,7,session17,2026-03-18,08:31:00,Desktop,10.47,Yes,11,3,Wednesday
+09273002004093,Composite UPS Fulwariya,8,session18,2026-03-31,15:48:00,Mobile,43.56,Yes,13,3,Tuesday
+09273001003315,UPS Sanjhai,7,session4,2026-03-18,13:59:00,Mobile,10.02,No,11,3,Wednesday
+09273001002275,Composite UPS Mahrajganj,7,session11,2026-03-27,14:51:00,Mobile,11.59,No,12,3,Friday
+09273001001310,Composite UPS Narayanpur,6,session18,2026-04-07,08:58:00,Mobile,15.8,No,14,4,Tuesday
+09273002005379,Composite UPS Mudila,6,session10,2026-03-10,14:53:00,Desktop,18.14,No,10,3,Tuesday
+09273002005339,Composite UPS Mudila,8,session15,2026-03-22,08:52:00,Mobile,9.83,No,12,3,Sunday
+09273002005003,Composite UPS Mudila,7,session6,2026-03-23,20:15:00,Desktop,18.41,No,12,3,Monday
+09273001003323,UPS Sanjhai,8,session4,2026-03-16,16:43:00,Desktop,46.37,Yes,11,3,Monday
+09273002005345,Composite UPS Mudila,7,session19,2026-03-22,08:32:00,Desktop,2.16,Yes,12,3,Sunday
+09273001001119,Composite UPS Narayanpur,7,session4,2026-03-25,08:33:00,Mobile,6.76,Yes,12,3,Wednesday
+09273001002167,Composite UPS Mahrajganj,8,session10,2026-04-03,14:11:00,Desktop,13.46,Yes,13,4,Friday
+09273001003381,UPS Sanjhai,8,session5,2026-03-28,20:47:00,Desktop,36.78,Yes,12,3,Saturday
+09273002005374,Composite UPS Mudila,8,session20,2026-03-30,14:46:00,Mobile,43.52,Yes,13,3,Monday
+09273002004004,Composite UPS Fulwariya,7,session10,2026-04-07,13:51:00,Desktop,48.52,No,14,4,Tuesday
+09273001002025,Composite UPS Mahrajganj,7,session9,2026-03-22,20:12:00,Desktop,21.07,No,12,3,Sunday
+09273002004158,Composite UPS Fulwariya,7,session5,2026-03-21,11:06:00,Desktop,7.38,No,11,3,Saturday
+09273001003075,UPS Sanjhai,7,session12,2026-03-09,16:14:00,Desktop,23.58,Yes,10,3,Monday
+09273002005078,Composite UPS Mudila,6,session6,2026-03-27,11:34:00,Desktop,11.7,Yes,12,3,Friday
+09273002004268,Composite UPS Fulwariya,7,session13,2026-03-10,18:46:00,Mobile,43.34,No,10,3,Tuesday
+09273001003005,UPS Sanjhai,6,session6,2026-03-11,13:47:00,Desktop,23.77,No,10,3,Wednesday
+09273001003342,UPS Sanjhai,7,session16,2026-03-29,17:26:00,Mobile,23.41,Yes,13,3,Sunday
+09273001003295,UPS Sanjhai,7,session15,2026-03-31,09:47:00,Desktop,35.3,No,13,3,Tuesday
+09273001003185,UPS Sanjhai,8,session4,2026-03-19,09:58:00,Desktop,10.11,Yes,11,3,Thursday
+09273002005310,Composite UPS Mudila,6,session1,2026-03-24,11:06:00,Desktop,10.91,No,12,3,Tuesday
+09273002005360,Composite UPS Mudila,6,session8,2026-03-16,16:59:00,Mobile,19.08,Yes,11,3,Monday
+09273002004379,Composite UPS Fulwariya,7,session10,2026-04-02,12:00:00,Mobile,17.57,Yes,13,4,Thursday
+09273001001196,Composite UPS Narayanpur,7,session11,2026-03-30,16:28:00,Mobile,41.34,No,13,3,Monday
+09273002005223,Composite UPS Mudila,7,session9,2026-03-19,12:39:00,Mobile,13.64,No,11,3,Thursday
+09273001002121,Composite UPS Mahrajganj,6,session14,2026-03-26,18:11:00,Desktop,10.15,Yes,12,3,Thursday
+09273001002257,Composite UPS Mahrajganj,6,session2,2026-04-01,18:46:00,Desktop,19.11,Yes,13,4,Wednesday
+09273002004096,Composite UPS Fulwariya,6,session18,2026-03-21,16:25:00,Mobile,37.86,No,11,3,Saturday
+09273001001305,Composite UPS Narayanpur,6,session9,2026-04-03,21:59:00,Desktop,21.2,Yes,13,4,Friday
+09273002005281,Composite UPS Mudila,7,session7,2026-03-21,20:47:00,Mobile,7.29,No,11,3,Saturday
+09273002004196,Composite UPS Fulwariya,8,session1,2026-03-24,16:55:00,Mobile,38.09,No,12,3,Tuesday
+09273001003365,UPS Sanjhai,7,session18,2026-04-12,11:26:00,Desktop,49.22,No,15,4,Sunday
+09273002005365,Composite UPS Mudila,7,session12,2026-04-11,10:02:00,Desktop,24.36,No,14,4,Saturday
+09273002004016,Composite UPS Fulwariya,8,session11,2026-03-12,18:16:00,Mobile,45.0,No,10,3,Thursday
+09273001001398,Composite UPS Narayanpur,7,session2,2026-03-26,13:58:00,Desktop,35.23,No,12,3,Thursday
+09273001002089,Composite UPS Mahrajganj,7,session13,2026-03-16,11:57:00,Mobile,17.98,No,11,3,Monday
+09273002004317,Composite UPS Fulwariya,6,session3,2026-03-19,11:12:00,Desktop,5.26,No,11,3,Thursday
+09273001002361,Composite UPS Mahrajganj,8,session12,2026-04-10,20:27:00,Mobile,22.64,Yes,14,4,Friday
+09273002005393,Composite UPS Mudila,7,session19,2026-04-05,20:22:00,Desktop,46.01,No,14,4,Sunday
+09273001002220,Composite UPS Mahrajganj,8,session8,2026-03-29,17:09:00,Desktop,13.26,No,13,3,Sunday
+09273001002300,Composite UPS Mahrajganj,6,session7,2026-04-01,21:06:00,Desktop,39.16,Yes,13,4,Wednesday
+09273001003135,UPS Sanjhai,8,session1,2026-03-31,15:21:00,Mobile,30.66,Yes,13,3,Tuesday
+09273002005260,Composite UPS Mudila,7,session7,2026-03-15,13:57:00,Mobile,39.01,No,11,3,Sunday
+09273002005335,Composite UPS Mudila,6,session12,2026-03-31,15:46:00,Mobile,16.09,No,13,3,Tuesday
+09273002005003,Composite UPS Mudila,7,session4,2026-03-18,13:36:00,Mobile,15.58,Yes,11,3,Wednesday
+09273002004227,Composite UPS Fulwariya,7,session1,2026-03-09,19:34:00,Desktop,14.81,No,10,3,Monday
+09273001002339,Composite UPS Mahrajganj,7,session20,2026-04-05,08:22:00,Desktop,46.37,Yes,14,4,Sunday
+09273001003124,UPS Sanjhai,8,session20,2026-03-13,13:10:00,Desktop,9.33,Yes,10,3,Friday
+09273001002032,Composite UPS Mahrajganj,8,session8,2026-03-25,19:16:00,Desktop,45.63,Yes,12,3,Wednesday
+09273002004225,Composite UPS Fulwariya,8,session12,2026-03-21,09:31:00,Desktop,48.29,No,11,3,Saturday
+09273001001137,Composite UPS Narayanpur,8,session9,2026-03-24,16:16:00,Mobile,4.87,Yes,12,3,Tuesday
+09273001001286,Composite UPS Narayanpur,8,session11,2026-03-15,19:56:00,Desktop,37.08,Yes,11,3,Sunday
+09273002005048,Composite UPS Mudila,6,session4,2026-03-20,10:03:00,Mobile,23.26,No,11,3,Friday
+09273001001293,Composite UPS Narayanpur,8,session10,2026-04-11,13:56:00,Mobile,35.87,Yes,14,4,Saturday
+09273001002191,Composite UPS Mahrajganj,6,session1,2026-03-25,10:13:00,Mobile,18.84,Yes,12,3,Wednesday
+09273001001057,Composite UPS Narayanpur,6,session6,2026-03-22,11:16:00,Desktop,3.47,No,12,3,Sunday
+09273001001386,Composite UPS Narayanpur,7,session11,2026-03-21,14:44:00,Mobile,8.6,No,11,3,Saturday
+09273001001111,Composite UPS Narayanpur,7,session3,2026-04-04,09:08:00,Mobile,27.05,No,13,4,Saturday
+09273002004088,Composite UPS Fulwariya,6,session9,2026-03-11,21:03:00,Desktop,41.51,No,10,3,Wednesday
+09273001001342,Composite UPS Narayanpur,6,session10,2026-03-13,14:37:00,Mobile,33.2,No,10,3,Friday
+09273001003275,UPS Sanjhai,7,session19,2026-03-15,08:00:00,Mobile,42.89,Yes,11,3,Sunday
+09273002005180,Composite UPS Mudila,7,session5,2026-03-25,19:36:00,Desktop,26.98,Yes,12,3,Wednesday
+09273001001139,Composite UPS Narayanpur,8,session3,2026-03-10,18:16:00,Mobile,44.1,Yes,10,3,Tuesday
+09273001001153,Composite UPS Narayanpur,6,session11,2026-03-25,10:12:00,Mobile,35.22,Yes,12,3,Wednesday
+09273001003117,UPS Sanjhai,6,session2,2026-03-14,08:29:00,Mobile,15.89,No,10,3,Saturday
+09273001003164,UPS Sanjhai,7,session15,2026-04-03,19:05:00,Desktop,43.53,No,13,4,Friday
+09273002005241,Composite UPS Mudila,7,session2,2026-03-28,10:16:00,Mobile,40.13,No,12,3,Saturday
+09273001002224,Composite UPS Mahrajganj,7,session18,2026-03-12,16:34:00,Mobile,24.1,No,10,3,Thursday
+09273002004369,Composite UPS Fulwariya,6,session13,2026-04-05,14:54:00,Desktop,19.38,No,14,4,Sunday
+09273001001386,Composite UPS Narayanpur,6,session20,2026-03-18,14:26:00,Desktop,35.25,No,11,3,Wednesday
+09273001003374,UPS Sanjhai,8,session16,2026-03-14,14:03:00,Desktop,21.89,No,10,3,Saturday
+09273001001009,Composite UPS Narayanpur,8,session7,2026-04-01,16:42:00,Desktop,29.13,Yes,13,4,Wednesday
+09273001003234,UPS Sanjhai,7,session12,2026-03-18,15:02:00,Mobile,26.08,Yes,11,3,Wednesday
+09273001003319,UPS Sanjhai,8,session9,2026-03-28,10:49:00,Desktop,34.02,Yes,12,3,Saturday
+09273002005029,Composite UPS Mudila,8,session1,2026-03-16,20:46:00,Mobile,4.8,No,11,3,Monday
+09273001001007,Composite UPS Narayanpur,7,session12,2026-03-18,09:07:00,Desktop,24.91,No,11,3,Wednesday
+09273001002063,Composite UPS Mahrajganj,7,session13,2026-03-16,17:21:00,Desktop,34.23,Yes,11,3,Monday
+09273002004237,Composite UPS Fulwariya,7,session15,2026-03-29,13:37:00,Mobile,37.01,No,13,3,Sunday
+09273001002007,Composite UPS Mahrajganj,7,session11,2026-04-11,17:38:00,Desktop,17.41,No,14,4,Saturday
+09273002004381,Composite UPS Fulwariya,8,session11,2026-03-14,11:15:00,Mobile,38.33,No,10,3,Saturday
+09273002005238,Composite UPS Mudila,6,session16,2026-03-15,19:09:00,Desktop,4.77,Yes,11,3,Sunday
+09273001001019,Composite UPS Narayanpur,7,session15,2026-03-30,20:58:00,Desktop,5.89,Yes,13,3,Monday
+09273002004104,Composite UPS Fulwariya,6,session14,2026-03-16,16:36:00,Mobile,14.55,No,11,3,Monday
+09273001001295,Composite UPS Narayanpur,8,session15,2026-03-28,17:50:00,Desktop,39.55,Yes,12,3,Saturday
+09273001001127,Composite UPS Narayanpur,7,session2,2026-03-17,16:05:00,Desktop,5.38,Yes,11,3,Tuesday
+09273002004191,Composite UPS Fulwariya,7,session14,2026-04-06,17:41:00,Desktop,33.44,No,14,4,Monday
+09273002005259,Composite UPS Mudila,8,session8,2026-03-25,16:15:00,Mobile,40.07,No,12,3,Wednesday
+09273002004135,Composite UPS Fulwariya,7,session11,2026-03-15,13:29:00,Desktop,10.56,Yes,11,3,Sunday
+09273001002248,Composite UPS Mahrajganj,7,session16,2026-03-12,13:40:00,Mobile,18.03,Yes,10,3,Thursday
+09273001002132,Composite UPS Mahrajganj,6,session16,2026-03-16,08:20:00,Mobile,46.96,Yes,11,3,Monday
+09273002005192,Composite UPS Mudila,6,session1,2026-03-31,14:51:00,Mobile,48.3,Yes,13,3,Tuesday
+09273001002168,Composite UPS Mahrajganj,6,session8,2026-04-08,12:52:00,Desktop,27.32,Yes,14,4,Wednesday
+09273001001298,Composite UPS Narayanpur,6,session7,2026-04-11,17:29:00,Desktop,8.31,No,14,4,Saturday
+09273001001028,Composite UPS Narayanpur,6,session1,2026-04-04,16:03:00,Mobile,49.11,No,13,4,Saturday
+09273002004168,Composite UPS Fulwariya,7,session3,2026-03-12,17:13:00,Desktop,22.2,Yes,10,3,Thursday
+09273001003270,UPS Sanjhai,8,session17,2026-03-16,17:12:00,Mobile,23.64,No,11,3,Monday
+09273002005044,Composite UPS Mudila,8,session2,2026-03-16,09:40:00,Desktop,12.18,No,11,3,Monday
+09273002005252,Composite UPS Mudila,8,session8,2026-04-01,21:16:00,Desktop,31.88,Yes,13,4,Wednesday
+09273002004118,Composite UPS Fulwariya,6,session2,2026-03-18,13:39:00,Desktop,37.68,No,11,3,Wednesday
+09273002004363,Composite UPS Fulwariya,8,session17,2026-03-23,17:26:00,Desktop,15.58,No,12,3,Monday
+09273001002227,Composite UPS Mahrajganj,8,session20,2026-03-16,21:21:00,Mobile,27.97,Yes,11,3,Monday
+09273001001335,Composite UPS Narayanpur,6,session19,2026-03-27,08:04:00,Mobile,25.89,No,12,3,Friday
+09273001003006,UPS Sanjhai,6,session8,2026-04-12,19:56:00,Mobile,14.02,No,15,4,Sunday

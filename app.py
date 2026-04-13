@@ -1,645 +1,595 @@
-import streamlit as st
-import pandas as pd
-from datetime import datetime
-import time
 import os
-import csv
+import platform
+import random
+from datetime import datetime, timedelta
 
-# ---------------- PAGE CONFIG ----------------
+import pandas as pd
+import streamlit as st
+import streamlit.components.v1 as components
+
+# Streamlit page configuration
 st.set_page_config(
-    page_title="Digital Learning App",
-    page_icon=" ",
-    layout="centered",
-    initial_sidebar_state="collapsed"
+    page_title="Digital Learning & Student Tracking",
+    layout="wide",
+    page_icon="🎓",
 )
 
-# Hide Streamlit default elements
-hide_st_style = """
-<style>
-#MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
-header {visibility: hidden;}
-.stApp > header {display: none;}
-.stDeployButton {display: none;}
-.stApp, .block-container, .main, [data-testid="stAppViewContainer"] {
-    background: transparent !important;
-}
-.block-container {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 0 !important;
-    margin: 0 auto !important;
-    width: 100% !important;
-    max-width: 380px !important;
-    min-height: 100vh;
-}
-.main {padding: 0 !important; margin: 0 auto !important;}
-.st-emotion-cache-1jicfl2 {padding: 0 !important;}
-[data-testid="stAppViewContainer"] {padding: 0 !important;}
-</style>
-"""
-st.markdown(hide_st_style, unsafe_allow_html=True)
+DATA_DIR = os.path.dirname(os.path.abspath(__file__))
+STUDENT_XLSX = os.path.join(DATA_DIR, "student.xlsx")
+SESSION_CSV = os.path.join(DATA_DIR, "session.csv")
+TRACKING_CSV = os.path.join(DATA_DIR, "tracking.csv")
 
-# ---------------- CUSTOM CSS ----------------
-st.markdown("""
-<style>
-/* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+# ------------------ LOAD DATA ------------------
 
-html, body {
-    background-color: #FFF8F0 !important;
-}
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background-color: #FFF8F0 !important;
-    min-height: 100vh;
-    overflow-x: hidden;
-}
+def load_student_data():
+    if os.path.exists(STUDENT_XLSX):
+        try:
+            return pd.read_excel(STUDENT_XLSX, engine="openpyxl", dtype=str)
+        except:
+            pass
+    student_csv = os.path.join(DATA_DIR, "student.csv")
+    if os.path.exists(student_csv):
+        return pd.read_csv(student_csv, dtype=str)
+    return pd.DataFrame()
 
-/* Login Page Styles */
-.login-container {
-    width: 100%;
-    max-width: 380px;
-    padding: 20px;
-    animation: slideUp 0.55s ease-out;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
-    border-radius: 12px;
-    position: relative;
-    overflow: hidden;
-}
-
-@keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(14px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.login-icon {
-    width: 44px;
-    height: 44px;
-    margin: 0 auto 12px;
-    border-radius: 50%;
-    background: rgba(229, 57, 53, 0.12);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #E53935;
-    font-size: 1.2rem;
-}
-
-.login-title {
-    text-align: center;
-    color: #222222;
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 6px;
-}
-
-..login-title span {
-    display: inline-block;
-    animation: floatText 3.5s ease-in-out infinite;
-}
-
-@keyframes floatText {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-3px); }
-}
-
-.login-subtitle {
-    text-align: center;
-    color: #5A5A5A;
-    font-size: 15px;
-    margin-bottom: 10px;
-    margin-top: 0;
-    font-weight: 600;
-    line-height: 1.4;
-}
-
-.login-desc {
-    text-align: center;
-    color: #7A7A7A;
-    font-size: 14px;
-    margin-bottom: 18px;
-    line-height: 1.55;
-}
-
-/* Form Elements */
-.stTextInput > div > div > input {
-    border-radius: 8px;
-    border: 1px solid #E8D4B8 !important;
-    padding: 0 0.95rem !important;
-    font-size: 14px !important;
-    transition: all 0.2s ease;
-    background: #FFFFFF !important;
-    height: 44px !important;
-}
-
-.stTextInput > div > div > input:focus {
-    border-color: #E53935 !important;
-    box-shadow: 0 0 0 2px rgba(229, 57, 53, 0.08) !important;
-    transform: translateY(-2px);
-}
-
-.stTextInput > div > div > input::placeholder {
-    color: #999;
-}
-
-/* Button Styles */
-.login-btn {
-    background: linear-gradient(135deg, #E53935 0%, #D81B60 100%);
-    color: white;
-    border: none;
-    border-radius: 14px;
-    padding: 0.95rem 1.2rem;
-    font-size: 1rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 0.25s ease;
-    width: 100%;
-    margin-top: 1.2rem;
-    position: relative;
-    overflow: hidden;
-    height: 48px;
-    box-shadow: 0 16px 36px rgba(229, 57, 53, 0.18);
-}
-
-.login-btn:hover {
-    background: linear-gradient(135deg, #D81B60 0%, #E53935 100%);
-    transform: translateY(-2px) scale(1.01);
-    box-shadow: 0 18px 42px rgba(229, 57, 53, 0.24);
-}
-
-.login-btn:active {
-    transform: translateY(0) scale(0.99);
-}
-
-.login-btn:active {
-    transform: translateY(0px);
-}
-
-/* Streamlit Button Override */
-.stButton > button {
-    background-color: #E53935 !important;
-    color: white !important;
-    border-radius: 8px !important;
-    border: none !important;
-    padding: 0 1rem !important;
-    font-weight: 700 !important;
-    font-size: 14px !important;
-    transition: all 0.2s ease !important;
-    height: 45px !important;
-    width: 100% !important;
-    letter-spacing: 0.02em;
-}
-
-.stButton > button:hover {
-    background-color: #C62828 !important;
-    transform: translateY(-1px) !important;
-}
-
-.stButton > button:focus {
-    background-color: #E53935 !important;
-}
-
-/* Dashboard Styles */
-.dashboard-container {
-    max-width: 380px;
-    margin: 0 auto;
-    padding: 1rem 0 1.5rem;
-    animation: fadeIn 0.45s ease-in;
-    background-color: transparent;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-.dashboard-heading {
-    text-align: center;
-    margin-bottom: 10px;
-    padding: 0;
-.dashboard-title {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #222;
-    margin-bottom: 4px;
-}
-
-.dashboard-subtitle {
-    font-size: 0.95rem;
-    color: #666;
-    margin: 0;
-    line-height: 1.5;
-}
-
-.dashboard-panel {
-    background: transparent;
-    border-radius: 0;
-    padding: 0;
-    box-shadow: none;
-    border: none;
-}
-
-.field-label {
-    font-size: 0.82rem;
-    font-weight: 700;
-    letter-spacing: 0.11em;
-    color: #6F6F6F;
-    margin-bottom: 0.25rem;
-    text-transform: uppercase;
-}
-
-.field-row {
-    margin-bottom: 0.72rem;
-}
-
-.stSelectbox > div > div > select {
-    border-radius: 10px;
-    border: 1px solid #E8D4B8;
-    padding: 0.72rem 0.85rem;
-    font-size: 0.95rem;
-    transition: all 0.2s ease;
-    background: #FFF8F2;
-    min-height: 42px;
-}
-
-.stSelectbox > div > div > select:focus {
-    border-color: #E53935;
-    box-shadow: 0 0 0 2px rgba(229, 57, 53, 0.08);
-}
-
-.video-section {
-    margin-top: 1rem;
-}
-
-..video-section {
-    margin-top: 16px;
-    padding-top: 16px;
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
-}
-
-.video-title {
-    font-size: 1rem;
-    font-weight: 700;
-    color: #D32F2F;
-    margin-bottom: 0.75rem;
-}
-
-.stVideo {
-    border-radius: 14px;
-    overflow: hidden;
-}
-
-/* Logout Button */
-.logout-btn {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    background: #E53935;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 0.5rem 1rem;
-    font-weight: 600;
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    z-index: 1000;
-    height: 32px;
-}
-
-.logout-btn:hover {
-    background: #C62828;
-    transform: translateY(-1px);
-    box-shadow: 0 2px 6px rgba(229, 57, 53, 0.2);
-}
-
-/* Success/Error Messages */
-.stSuccess, .stError {
-    border-radius: 8px;
-    padding: 0.8rem;
-    margin: 0.8rem 0;
-    font-size: 0.9rem;
-}
-
-.stSuccess {
-    background: #E8F5E9;
-    border: 1px solid #4CAF50;
-    color: #2E7D32;
-}
-
-.stError {
-    background: #FFEBEE;
-    border: 1px solid #E53935;
-    color: #C62828;
-}
-
-.stInfo {
-    background: #E3F2FD;
-    border: 1px solid #1976D2;
-    color: #0D47A1;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .login-container {
-        padding: 0;
-    }
-
-    .dashboard-container {
-        padding: 0.8rem;
-    }
-
-    .selection-grid {
-        grid-template-columns: 1fr;
-        gap: 0.8rem;
-    }
-
-    .welcome-title {
-        font-size: 1.1rem;
-    }
-
-    .video-title {
-        font-size: 1.1rem;
-    }
-}
-</style>
-""", unsafe_allow_html=True)
-
-# ---------------- UTILITY FUNCTIONS ----------------
 @st.cache_data
-def load_data():
-    try:
-        students = pd.read_csv("student.csv")
-        sessions = pd.read_csv("session.csv")
-        return students, sessions
-    except Exception as e:
-        st.error(f"Data load error: {e}")
-        return None, None
+def load_session_data():
+    return pd.read_csv(SESSION_CSV, dtype=str).fillna("")
 
-def save_tracking_data(tracking_entry):
-    """Save tracking data to CSV with proper error handling"""
-    try:
-        # Use absolute path
-        csv_path = os.path.join(os.getcwd(), "tracking.csv")
-        
-        # Check if file exists and has data
-        file_exists = os.path.exists(csv_path) and os.path.getsize(csv_path) > 0
-        
-        # Define fieldnames
-        fieldnames = list(tracking_entry.keys())
-        
-        # Write to CSV with proper error handling
-        with open(csv_path, 'a', newline='', encoding='utf-8') as csvfile:
-            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-            
-            # Write header only if file is empty
-            if not file_exists:
-                writer.writeheader()
-            
-            writer.writerow(tracking_entry)
-        
-        st.session_state.tracking_saved = True
-    except PermissionError:
-        st.error("⚠️ Permission denied: Please close tracking.csv if it's open in Excel or another application.")
-        st.session_state.tracking_saved = False
-    except Exception as e:
-        st.error(f"⚠️ Error saving data: {str(e)}")
-        st.session_state.tracking_saved = False
+@st.cache_data
+def load_tracking_data():
+    if os.path.exists(TRACKING_CSV):
+        df = pd.read_csv(TRACKING_CSV, dtype=str)
+        df["use_time"] = pd.to_numeric(df.get("use_time", 0), errors="coerce").fillna(0)
+        return df
+    return pd.DataFrame()
 
-def get_student_name(students_df, student_id):
-    """Get student name from student_id"""
-    student_row = students_df[students_df['student_id'].astype(str) == str(student_id)]
-    if not student_row.empty:
-        # Try different possible name columns
-        for col in ['name', 'student_name', 'full_name']:
-            if col in student_row.columns:
-                return student_row.iloc[0][col]
-        return f"Student {student_id}"  # Fallback
-    return f"Student {student_id}"
+def save_tracking(entry):
+    df = pd.DataFrame([entry])
+    df.to_csv(TRACKING_CSV, mode="a", header=not os.path.exists(TRACKING_CSV), index=False)
+    load_tracking_data.clear()
 
-def initialize_tracking_file():
-    """Initialize tracking.csv with headers if it doesn't exist"""
-    try:
-        csv_path = os.path.join(os.getcwd(), "tracking.csv")
-        
-        # If file doesn't exist, create it with headers
-        if not os.path.exists(csv_path):
-            fieldnames = [
-                "student_id", "school", "class", "session", "date", "time", 
-                "device", "use_time", "session_completed", "week", "month", "day"
-            ]
-            
-            with open(csv_path, 'w', newline='', encoding='utf-8') as csvfile:
-                writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-                writer.writeheader()
-    except Exception as e:
-        st.warning(f"Could not initialize tracking file: {str(e)}")
+def ensure_dummy_tracking(tracking_df, student_df, session_df):
+    if st.session_state.get("dummy_populated"):
+        return
 
-# ---------------- LOAD DATA ----------------
-students, sessions = load_data()
+    if len(tracking_df) >= 1000:
+        st.session_state.dummy_populated = True
+        return
 
-# Initialize tracking file
-initialize_tracking_file()
+    if student_df.empty or session_df.empty:
+        return
 
-# ---------------- SESSION STATE INITIALIZATION ----------------
-if "page" not in st.session_state:
-    st.session_state.page = "login"
+    needed = max(0, 1000 - len(tracking_df))
+    student_ids = student_df["student_ID"].astype(str).unique().tolist()
+    schools = student_df["School"].astype(str).unique().tolist()
+    student_map = student_df.set_index("student_ID")["School"].to_dict()
+    session_options = session_df["Session"].astype(str).tolist()
+    classes = session_df["Class"].astype(str).unique().tolist()
 
-if "student_data" not in st.session_state:
-    st.session_state.student_data = {}
-
-if "selection_data" not in st.session_state:
-    st.session_state.selection_data = {
-        "school": None,
-        "class": None,
-        "session": None,
-        "video_start_time": None,
-        "session_tracked": False
-    }
-
-if "tracking_saved" not in st.session_state:
-    st.session_state.tracking_saved = False
-
-# ---------------- LOGIN PAGE ----------------
-if st.session_state.page == "login":
-    # Center login form using columns
-    col1, col2, col3 = st.columns([1, 1.2, 1])
-    
-    with col2:
-        st.markdown('<div class="login-container">', unsafe_allow_html=True)
-        st.markdown('<div class="login-icon">🎓</div>', unsafe_allow_html=True)
-        st.markdown('<h1 class="login-title">Digital Learning</h1>', unsafe_allow_html=True)
-        st.markdown('<p class="login-subtitle">Secure Student Access</p>', unsafe_allow_html=True)
-        st.markdown('<p class="login-desc">Enter your student ID and password to access your learning dashboard.</p>', unsafe_allow_html=True)
-        
-        with st.form("login_form", clear_on_submit=False):
-            student_id = st.text_input("Student ID", placeholder="Enter ID")
-            password = st.text_input("Password", type="password", placeholder="Enter Password")
-            
-            login_submitted = st.form_submit_button("Login", use_container_width=True)
-
-            if login_submitted:
-                if student_id and password:
-                    # Authenticate user
-                    user = students[
-                        (students["student_id"].astype(str) == student_id) &
-                        (students["password"].astype(str) == password)
-                    ]
-
-                    if not user.empty:
-                        # Store student data
-                        st.session_state.student_data = {
-                            "student_id": student_id,
-                            "student_name": get_student_name(students, student_id),
-                            "school": user.iloc[0]["school"],
-                            "class": user.iloc[0]["class"]
-                        }
-
-                        # Reset selection data
-                        st.session_state.selection_data = {
-                            "school": None,
-                            "class": None,
-                            "session": None,
-                            "video_start_time": None,
-                            "session_tracked": False
-                        }
-
-                        st.session_state.page = "dashboard"
-                        st.success("✓ Login successful!")
-                        st.rerun()
-                    else:
-                        st.error("Invalid credentials")
-                else:
-                    st.error("Please fill all fields")
-        
-        st.markdown('</div>', unsafe_allow_html=True)
-
-# ---------------- DASHBOARD PAGE ----------------
-elif st.session_state.page == "dashboard":
-    st.markdown('<div class="dashboard-container">', unsafe_allow_html=True)
-
-    # Logout Button
-    if st.button("🚪 Logout", key="logout", help="Logout and return to login"):
-        st.session_state.page = "login"
-        st.session_state.student_data = {}
-        st.session_state.selection_data = {
-            "school": None,
-            "class": None,
-            "session": None,
-            "video_start_time": None
-        }
-        st.rerun()
-
-    # Dashboard Header
-    student_name = st.session_state.student_data.get("student_name", "Student")
-    st.markdown(f'<div class="dashboard-heading"><div class="dashboard-title">Welcome, {student_name}</div><p class="dashboard-subtitle">Choose your school, class and session to begin.</p></div>', unsafe_allow_html=True)
-    st.markdown('<div class="dashboard-panel">', unsafe_allow_html=True)
-
-    # ---------------- CASCADING SELECTION SYSTEM ----------------
-
-    available_schools = sorted(students["school"].unique())
-    st.markdown('<div class="field-row"><div class="field-label">School</div></div>', unsafe_allow_html=True)
-    selected_school = st.selectbox(
-        "School",
-        ["Select school"] + available_schools,
-        key="school_select",
-        label_visibility="collapsed"
-    )
-    if selected_school == "Select school":
-        selected_school = None
-
-    if selected_school != st.session_state.selection_data["school"]:
-        st.session_state.selection_data["school"] = selected_school
-        st.session_state.selection_data["class"] = None
-        st.session_state.selection_data["session"] = None
-
-    if selected_school:
-        school_students = students[students["school"] == selected_school]
-        available_classes = sorted(school_students["class"].unique())
-
-        st.markdown('<div class="field-row"><div class="field-label">Class</div></div>', unsafe_allow_html=True)
-        selected_class = st.selectbox(
-            "Class",
-            ["Select class"] + available_classes,
-            key="class_select",
-            label_visibility="collapsed"
+    dummy_rows = []
+    today = datetime.today()
+    for _ in range(needed):
+        student_id = random.choice(student_ids)
+        school = student_map.get(student_id, random.choice(schools))
+        session_item = random.choice(session_options)
+        class_item = random.choice(classes)
+        date_value = today - timedelta(days=random.randint(0, 35))
+        start_time = datetime.combine(date_value.date(), datetime.min.time()) + timedelta(
+            hours=random.randint(8, 21), minutes=random.randint(0, 59)
         )
-        if selected_class == "Select class":
-            selected_class = None
+        use_time = round(random.uniform(2.0, 50.0), 2)
+        completed = random.choice(["Yes", "No"])
 
-        if selected_class != st.session_state.selection_data["class"]:
-            st.session_state.selection_data["class"] = selected_class
-            st.session_state.selection_data["session"] = None
+        dummy_rows.append({
+            "student_id": str(student_id),
+            "school": school,
+            "class": class_item,
+            "session": session_item,
+            "date": date_value.strftime("%Y-%m-%d"),
+            "time": start_time.strftime("%H:%M:%S"),
+            "device": random.choice(["Mobile", "Desktop"]),
+            "use_time": use_time,
+            "session_completed": completed,
+            "week": date_value.strftime("%U"),
+            "month": date_value.month,
+            "day": date_value.strftime("%A"),
+        })
 
-        if selected_class:
-            class_sessions = sessions[sessions["class"] == selected_class]
-            available_sessions = sorted(class_sessions["session"].unique())
+    if dummy_rows:
+        pd.DataFrame(dummy_rows).to_csv(TRACKING_CSV, mode="a", header=not os.path.exists(TRACKING_CSV), index=False)
+        load_tracking_data.clear()
+    st.session_state.dummy_populated = True
 
-            st.markdown('<div class="field-row"><div class="field-label">Session</div></div>', unsafe_allow_html=True)
-            selected_session = st.selectbox(
-                "Session",
-                ["Select session"] + available_sessions,
-                key="session_select",
-                label_visibility="collapsed"
+def detect_device_type():
+    if "device_type" in st.session_state and st.session_state.device_type:
+        return st.session_state.device_type
+
+    try:
+        if hasattr(st, "query_params"):
+            query_params = dict(st.query_params)
+        else:
+            query_params = st.experimental_get_query_params()
+    except Exception:
+        query_params = {}
+
+    device_from_query = query_params.get("device", [None])
+    if isinstance(device_from_query, list):
+        device_from_query = device_from_query[0] if device_from_query else None
+
+    if device_from_query:
+        st.session_state.device_type = device_from_query
+        return device_from_query
+
+    js = """
+        <script>
+        const isMobile = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        const device = isMobile ? 'Mobile' : 'Desktop';
+        const params = new URLSearchParams(window.location.search);
+        params.set('device', device);
+        window.history.replaceState({}, '', `${window.location.pathname}?${params}`);
+        </script>
+    """
+    components.html(js, height=0)
+    fallback = platform.system()
+    st.session_state.device_type = "Detecting..." if not device_from_query else fallback
+    return st.session_state.device_type
+
+def safe_rerun():
+    if hasattr(st, "rerun"):
+        st.rerun()
+    elif hasattr(st, "experimental_rerun"):
+        st.experimental_rerun()
+    else:
+        raise RuntimeError("Streamlit rerun not available in this version.")
+
+# ------------------ SAFE CLEAN ------------------
+
+def clean_list(series):
+    return sorted(series.dropna().astype(str).str.strip().unique().tolist())
+
+# ------------------ LOGIN ------------------
+
+def login_page(student_df):
+    st.markdown("## Welcome to the Digital Learning Platform")
+    st.markdown("Use your `student id` and `password` to sign in and access your learning sessions.")
+
+    login_col, empty_col, info_col = st.columns([2, 1, 2])
+    with login_col:
+        with st.form("login_form"):
+            student_id = st.text_input("Student ID", value="", max_chars=32).strip()
+            password = st.text_input("Password", type="password").strip()
+            submit = st.form_submit_button("Login")
+
+            if submit:
+                if student_id and password:
+                    user = student_df[
+                        (student_df["student_ID"].astype(str).str.strip() == student_id) &
+                        (student_df["password"].astype(str).str.strip() == password)
+                    ]
+                    if not user.empty:
+                        st.session_state.user = user.iloc[0].to_dict()
+                        st.session_state.login = True
+                        safe_rerun()
+                    else:
+                        st.error("Invalid student ID or password. Please try again.")
+                else:
+                    st.warning("Please enter both student ID and password.")
+
+    with info_col:
+        st.markdown("### Login Tips")
+        st.markdown("- Use the registered `student_ID` from your school record.\n- The default password is often `1234` in sample datasets.\n- For a secure experience, always log out after your session.")
+
+# ------------------ MAIN APP ------------------
+
+def main_app(student_df, session_df, tracking_df):
+    if student_df.empty:
+        st.error("Student data could not be loaded. Please check the data files.")
+        return
+    if session_df.empty:
+        st.error("Session data could not be loaded. Please check the data files.")
+        return
+
+    user = st.session_state.user
+    student_name = user.get("student_Name", "Student")
+    student_school = user.get("School", "")
+    student_class = user.get("Class", "")
+
+    st.markdown(f"## Welcome {student_name}")
+    st.markdown("### Digital Learning & Tracking Dashboard")
+
+    logout_col, device_col = st.columns([1, 1])
+    with logout_col:
+        if st.button("Logout"):
+            st.session_state.clear()
+            safe_rerun()
+
+    with device_col:
+        device_type = detect_device_type()
+        st.info(f"Detected device: **{device_type}**")
+
+    with st.expander("Your selected session details", expanded=True):
+        choice_col1, choice_col2, choice_col3 = st.columns(3)
+        schools = clean_list(student_df["School"])
+        if student_school and student_school in schools:
+            selected_school = choice_col1.selectbox("Select School", schools, index=schools.index(student_school))
+        else:
+            selected_school = choice_col1.selectbox("Select School", schools)
+
+        classes_for_school = clean_list(student_df[student_df["School"] == selected_school]["Class"])
+        if not classes_for_school:
+            classes_for_school = clean_list(student_df["Class"])
+        if str(student_class) in classes_for_school:
+            selected_class = choice_col2.selectbox("Select Class", classes_for_school, index=classes_for_school.index(str(student_class)))
+        else:
+            selected_class = choice_col2.selectbox("Select Class", classes_for_school)
+
+        sessions_for_class = session_df[session_df["Class"] == selected_class]
+        session_options = clean_list(sessions_for_class["Session"])
+        if session_options:
+            selected_session = choice_col3.selectbox("Select Session", session_options)
+        else:
+            selected_session = None
+            choice_col3.info("No sessions found for this class.")
+
+    session_details = None
+    if selected_session and not sessions_for_class.empty:
+        session_details = sessions_for_class[sessions_for_class["Session"] == selected_session].iloc[0]
+
+    video_col, notes_col = st.columns([3, 1])
+    if session_details is not None:
+        video_url = session_details.get("Video Link", "")
+        if video_url:
+            try:
+                st.video(video_url)
+            except Exception as e:
+                st.error(f"Unable to load video: {str(e)}")
+                st.info("Please check the video link or try again later.")
+
+        with notes_col:
+            st.markdown("### 📄 Download Notes")
+            notes = session_details.get("Notes") or session_details.get("notes") or session_details.get("Notes Link") or ""
+            if notes and str(notes).strip():
+                st.markdown(f"[📥 Download Notes]({notes})")
+            else:
+                st.info("No notes available for this session.")
+    else:
+        st.info("Choose a session to view the video and notes preview.")
+
+    st.markdown("---")
+    tracker_col, stats_col = st.columns([2, 1])
+    with tracker_col:
+        st.subheader("Session Tracking")
+        if "current_session_start" not in st.session_state:
+            st.session_state.current_session_start = None
+        if "completed_radio" not in st.session_state:
+            st.session_state.completed_radio = "Yes"
+
+        completed_option = st.radio("Did you complete the session?", ["Yes", "No"], index=0, key="completed_radio")
+
+        start_button, end_button = st.columns(2)
+        if start_button.button("Start Session"):
+            st.session_state.current_session_start = datetime.now()
+            st.success("Session started. Enjoy your learning!")
+
+        if end_button.button("End Session"):
+            if st.session_state.current_session_start is None:
+                st.warning("Please start a session before ending it.")
+            elif selected_session is None:
+                st.warning("Please select a session before ending the tracking.")
+            else:
+                start_time = st.session_state.current_session_start
+                elapsed = datetime.now() - start_time
+                elapsed_minutes = round(elapsed.total_seconds() / 60, 2)
+                entry = {
+                    "student_id": str(user.get("student_ID", "")),
+                    "school": selected_school,
+                    "class": str(selected_class),
+                    "session": str(selected_session),
+                    "date": datetime.now().strftime("%Y-%m-%d"),
+                    "time": datetime.now().strftime("%H:%M:%S"),
+                    "device": device_type if device_type not in ["Detecting...", ""] else platform.system(),
+                    "use_time": elapsed_minutes,
+                    "session_completed": completed_option,
+                    "week": datetime.now().strftime("%U"),
+                    "month": datetime.now().month,
+                    "day": datetime.now().strftime("%A"),
+                }
+                save_tracking(entry)
+                st.success(f"Saved tracking record: {elapsed_minutes} minutes.")
+                st.session_state.current_session_start = None
+                safe_rerun()
+
+    with stats_col:
+        st.subheader("Session Activity")
+        st.markdown("Track your learning time, mark completion, and keep progress visible to teachers.")
+        st.write("- Start a session when you begin learning.")
+        st.write("- End the session when you finish or take a break.")
+        st.write("- The dashboard updates with usage and completion statistics.")
+
+    st.markdown("---")
+    st.subheader("Tracking Dashboard")
+    render_dashboard(tracking_df)
+
+def render_dashboard(tracking_df):
+    try:
+        if tracking_df.empty:
+            st.warning("No tracking data is available yet.")
+            return
+
+        tracking_df["is_completed"] = tracking_df["session_completed"].astype(str).str.lower().isin(["yes", "1", "true"])
+        total_students = tracking_df["student_id"].nunique()
+        total_completed = tracking_df["is_completed"].sum()
+        total_hours = tracking_df["use_time"].astype(float).sum()
+        completion_rate = round(total_completed / max(len(tracking_df), 1) * 100, 1)
+
+        metric_col1, metric_col2, metric_col3 = st.columns(3)
+        metric_col1.metric("Total Students", total_students)
+        metric_col2.metric("Sessions Completed", int(total_completed))
+        metric_col3.metric("Total Usage Time (mins)", round(total_hours, 1))
+
+        chart_col1, chart_col2 = st.columns(2)
+        with chart_col1:
+            st.subheader("Class-wise Usage")
+            class_usage = tracking_df.groupby("class")["use_time"].sum().sort_values(ascending=False)
+            st.bar_chart(class_usage)
+
+        with chart_col2:
+            st.subheader("Daily Activity")
+            if "date" in tracking_df.columns:
+                daily_activity = tracking_df.groupby("date")["use_time"].sum().sort_index()
+                st.line_chart(daily_activity)
+            else:
+                st.info("Daily activity will appear after sessions are tracked.")
+
+        completion_col, recent_col = st.columns([2, 3])
+        with completion_col:
+            st.subheader("Session Completion Rate")
+            completion_by_class = tracking_df.groupby("class").agg(
+                completed=("is_completed", "sum"), total=("is_completed", "count")
             )
-            if selected_session == "Select session":
-                selected_session = None
+            completion_by_class["rate"] = (completion_by_class["completed"] / completion_by_class["total"] * 100).round(1)
+            st.dataframe(completion_by_class["rate"].rename("Completion %"), use_container_width=True)
 
-            if selected_session != st.session_state.selection_data["session"]:
-                st.session_state.selection_data["session"] = selected_session
-                st.session_state.selection_data["video_start_time"] = time.time()
-                st.session_state.selection_data["session_tracked"] = False
+        with recent_col:
+            st.subheader("Recent Tracking Activity")
+            st.dataframe(tracking_df.sort_values(by=["date", "time"], ascending=False).head(12))
+    except Exception as e:
+        st.error(f"Error loading dashboard: {str(e)}")
 
-            if selected_session:
-                selected_video = class_sessions[class_sessions["session"] == selected_session].iloc[0]
+def apply_custom_styles():
+    st.markdown(
+        """
+        <style>
+        /* Global Styles */
+        body {
+            background-color: #fff9f2 !important;
+            color: #2b0a0a;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 14px !important;
+            line-height: 1.5 !important;
+        }
 
-                if not st.session_state.selection_data.get("session_tracked", False):
-                    now = datetime.now()
-                    tracking_entry = {
-                        "student_id": st.session_state.student_data["student_id"],
-                        "school": selected_school,
-                        "class": selected_class,
-                        "session": selected_session,
-                        "date": now.date(),
-                        "time": now.time(),
-                        "device": "web",
-                        "use_time": 0.0,
-                        "session_completed": 0,
-                        "week": now.isocalendar()[1],
-                        "month": now.month,
-                        "day": now.strftime('%A')
-                    }
-                    save_tracking_data(tracking_entry)
-                    st.session_state.selection_data["session_tracked"] = True
+        .stApp {
+            background-color: #fff9f2 !important;
+        }
 
-                st.markdown('<div class="video-section">', unsafe_allow_html=True)
-                st.markdown('<div class="field-label">Topic</div>', unsafe_allow_html=True)
-                st.markdown(f'<h2 class="video-title">{selected_video["topic"]}</h2>', unsafe_allow_html=True)
+        .block-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            background-color: #fff9f2 !important;
+        }
 
-                video_url = selected_video["video_link"]
-                try:
-                    st.video(video_url)
-                except Exception as e:
-                    st.error(f"Error loading video: {str(e)}")
-                st.markdown('</div>', unsafe_allow_html=True)
+        /* Headings */
+        h1, h2, h3, h4, h5, h6 {
+            color: #a80c0c !important;
+            text-align: center;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            font-size: 1.2rem !important;
+        }
 
-    st.markdown('</div>', unsafe_allow_html=True)
-    st.markdown('</div>', unsafe_allow_html=True)
+        h1 { font-size: 1.8rem !important; }
+        h2 { font-size: 1.5rem !important; }
+        h3 { font-size: 1.3rem !important; }
+
+        /* Buttons */
+        .stButton button {
+            background-color: #c1121f !important;
+            color: white !important;
+            border: none !important;
+            border-radius: 8px !important;
+            padding: 0.5rem 1rem !important;
+            font-size: 0.85rem !important;
+            font-weight: 500 !important;
+            transition: all 0.3s ease !important;
+            box-shadow: 0 2px 4px rgba(193, 18, 31, 0.2) !important;
+        }
+
+        .stButton button:hover {
+            background-color: #a80c0c !important;
+            transform: translateY(-1px) !important;
+            box-shadow: 0 4px 8px rgba(193, 18, 31, 0.3) !important;
+        }
+
+        /* Inputs and Dropdowns */
+        .stTextInput input, .stSelectbox select, .stRadio div {
+            border: 2px solid #f5c2b2 !important;
+            border-radius: 8px !important;
+            padding: 0.5rem !important;
+            background-color: white !important;
+            transition: border-color 0.3s ease !important;
+        }
+
+        .stTextInput input:focus, .stSelectbox select:focus {
+            border-color: #c1121f !important;
+            box-shadow: 0 0 0 2px rgba(193, 18, 31, 0.1) !important;
+        }
+
+        /* Cards and Sections */
+        .stExpander, .stAlert, .stInfo {
+            border-radius: 12px !important;
+            border: 1px solid #f5c2b2 !important;
+            background-color: white !important;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05) !important;
+            margin-bottom: 1rem !important;
+        }
+
+        /* Video and Notes Layout */
+        .stColumns {
+            gap: 1rem !important;
+        }
+
+        /* Links */
+        a, .stMarkdown a {
+            color: #c1121f !important;
+            text-decoration: none !important;
+            font-weight: 500 !important;
+        }
+
+        a:hover, .stMarkdown a:hover {
+            color: #a80c0c !important;
+            text-decoration: underline !important;
+        }
+
+        /* Metrics */
+        .stMetric {
+            background-color: white !important;
+            border-radius: 12px !important;
+            padding: 1rem !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05) !important;
+            border: 1px solid #f5c2b2 !important;
+        }
+
+        /* Charts */
+        .stBarChart, .stLineChart {
+            background-color: white !important;
+            border-radius: 12px !important;
+            padding: 1rem !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05) !important;
+            border: 1px solid #f5c2b2 !important;
+        }
+
+        /* DataFrames */
+        .stDataFrame {
+            border-radius: 12px !important;
+            overflow: hidden !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05) !important;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .block-container {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 1.2rem !important;
+                text-align: left !important;
+            }
+
+            .stButton button {
+                width: 100% !important;
+                margin-bottom: 0.5rem !important;
+            }
+
+            .stColumns {
+                flex-direction: column !important;
+                gap: 0.5rem !important;
+            }
+
+            .stMetric {
+                margin-bottom: 1rem !important;
+            }
+        }
+
+        /* Sidebar (if used) */
+        .stSidebar {
+            background-color: #fff9f2 !important;
+            border-right: 2px solid #f5c2b2 !important;
+        }
+
+        /* Form Styling */
+        .stForm {
+            background-color: white !important;
+            border-radius: 12px !important;
+            padding: 2rem !important;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05) !important;
+            border: 1px solid #f5c2b2 !important;
+        }
+
+        /* Success/Warning/Error Messages */
+        .stSuccess, .stWarning, .stError, .stInfo {
+            border-radius: 8px !important;
+            border: none !important;
+        }
+
+        .stSuccess {
+            background-color: #d4edda !important;
+            color: #155724 !important;
+        }
+
+        .stWarning {
+            background-color: #fff3cd !important;
+            color: #856404 !important;
+        }
+
+        .stError {
+            background-color: #f8d7da !important;
+            color: #721c24 !important;
+        }
+
+        .stInfo {
+            background-color: #d1ecf1 !important;
+            color: #0c5460 !important;
+        }
+
+        /* Radio Buttons */
+        .stRadio label {
+            font-weight: 500 !important;
+            color: #2b0a0a !important;
+        }
+
+        /* Expander */
+        .stExpander summary {
+            background-color: #f8f9fa !important;
+            border-radius: 8px !important;
+            padding: 0.5rem 1rem !important;
+            font-weight: 600 !important;
+            color: #a80c0c !important;
+        }
+
+        .stExpander .stExpanderContent {
+            padding: 1rem !important;
+            background-color: white !important;
+            border-radius: 0 0 12px 12px !important;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+# ------------------ MAIN ------------------
+
+def main():
+    try:
+        apply_custom_styles()
+        student_df = load_student_data()
+        session_df = load_session_data()
+        tracking_df = load_tracking_data()
+
+        ensure_dummy_tracking(tracking_df, student_df, session_df)
+
+        if not st.session_state.get("login"):
+            login_page(student_df)
+        else:
+            main_app(student_df, session_df, tracking_df)
+    except Exception as e:
+        st.error(f"An error occurred: {str(e)}")
+        st.info("Please refresh the page or contact support if the issue persists.")
+
+if __name__ == "__main__":
+    main()
