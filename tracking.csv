@@ -1003,3 +1003,7 @@ student_id,school,class,session,date,time,device,use_time,session_completed,week
 09273001001003,Composite UPS Mahrajganj,7,session13,2026-04-13,13:24:35.350476,web,,0,15,4,Monday
 09273001001003,Composite UPS Narayanpur,8,session1,2026-04-13,13:26:10.089160,web,,0,15,4,Monday
 09273001001003,Composite UPS Narayanpur,7,session1,2026-04-13,13:26:14.266273,web,,0,15,4,Monday
+09273001001004,Composite UPS Narayanpur,7,session1,2026-04-13,13:59:25.890328,web,,0,15,4,Monday
+09273001001004,Composite UPS Narayanpur,7,session13,2026-04-13,13:59:36.035152,web,,0,15,4,Monday
+09273001001004,Composite UPS Narayanpur,6,session13,2026-04-13,13:59:38.987312,web,,0,15,4,Monday
+09273001001004,Composite UPS Mahrajganj,6,session13,2026-04-13,13:59:42.670064,web,,0,15,4,Monday
